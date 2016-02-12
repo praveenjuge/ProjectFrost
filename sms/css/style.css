@@ -1,0 +1,196 @@
+/*Main Contents*/
+body{
+   font-size: 30px;
+    color: #000000;
+    background-color: #eeeeee;
+    font-family: 'robotoregular',Georgia,Times,serif;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+a{
+    color: black;
+}
+
+a:hover,
+a:focus{
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+/*newsbox*/
+
+.newsbox{
+
+    background-color: #eeeeee;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.recent{
+    font-size: 21px;
+    color: black;
+    font-family: 'robotoregular',Georgia,Times,serif;
+    padding: 10px 0px;
+    border-bottom: 1px solid #000;
+}
+
+.news{
+    margin: 5px 0px;
+    padding: 10px;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    font-family: 'robotoregular',Georgia,Times,serif;
+}
+
+.date{
+    font-size: 24px;
+/*    text-align: right;*/
+}
+
+.newstitle{
+    font-size: 16px;
+/*    text-align: left;*/
+}
+
+/*Logo Section*/
+
+.logobg{
+
+    font-weight:1000;
+    background: url(../images/hero.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.logohead{
+    font-family: 'robotothin',Georgia,Times,serif;
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 10px;
+}
+
+.fpass{
+    padding-top: 30px;
+    font-size: 16px;
+    position: relative;
+    color: #eeeeee;
+}
+
+.fpass a{
+    color: #eeeeee;
+}
+
+.fpass a:hover{
+    color: #95a5a6;
+}
+
+.box{
+    width:100%;
+}
+
+.box hr{
+    width: 80px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+form {
+	padding: 28% 1%;
+    margin: auto;
+}
+
+form li{
+    margin: auto;
+	border:none;
+	list-style:none;
+	margin-bottom:50px;
+	width:70%;
+	background:#dfdfdf;
+/*    box-shadow:0px 0px 5px #000000;*/
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 0.6em 1em 0.6em 1em;
+	color: #858282;
+	font-size: 18px;
+	outline: none;
+	background: none;
+	font-weight: 500;
+	border: none;
+    margin: auto;
+	}
+
+.submit {
+    margin-top: 80px;
+}
+
+.submit input[type="submit"]{
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	padding: 11px 10px;
+	width: 100%;
+	border: none;
+	background: #2c3e50;
+}
+
+input[type="submit"]:hover{
+	background:#34495e;
+}
+
+@media (max-width:768px){
+	form {
+	padding: 12% 6%;
+	}
+}
+
+@media (max-width:480px){
+	form {
+	padding: 12% 5%;
+	}
+
+}
+@media (max-width:320px){
+
+	input[type="text"], input[type="password"] {
+	width: 90%;
+	padding: 0.9em 1em 0.9em 1.7em;
+	color: #858282;
+	font-size: 16px;
+	}
+    
+	.submit input[type="submit"] {
+	font-size: 18px;
+	padding: 13px 10px;
+	}
+	form {
+	padding: 12% 4%;
+	}
+	form li {
+	margin-bottom: 14px;
+	}
+}
+
+/*footer*/
+
+.flist{
+    font-size: 18px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+}
+
+.flist li{
+    display: inline-block;
+    padding:10px 30px;
+}
+
