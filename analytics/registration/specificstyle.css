@@ -1,0 +1,47 @@
+.register{
+    min-height: 600px;
+    margin-top: 74px;
+}
+
+.head{
+    font-size: 50px;
+    margin: 25px 0px;
+    margin-bottom: 40px; 
+}
+
+.formlabel{
+    font-size: 35px;
+    text-align: right;
+}
+
+.reg ul{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.reg li{
+    width: 100%;
+    color: black;
+    display: inline-block;
+	border:none;
+	list-style:none;
+	background:#dfdfdf;
+    margin: 10px 20px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 0.5em 2em 0.4em 2em;
+	color: #858282;
+	font-size: 17px;
+	outline: none;
+	background: none;
+	border: none;
+}
+
+.asub{
+    margin: 70px 0px;
+}
