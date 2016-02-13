@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'elegant_luxmager';
+    src: url('elegantlux-mager-webfont.eot');
+    src: url('elegantlux-mager-webfont.eot?#iefix') format('embedded-opentype'), url('elegantlux-mager-webfont.woff2') format('woff2'), url('elegantlux-mager-webfont.woff') format('woff'), url('elegantlux-mager-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

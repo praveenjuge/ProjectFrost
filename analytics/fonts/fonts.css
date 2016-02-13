@@ -1,0 +1,3 @@
+.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#c0392b;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}
+
+@font-face{font-family:'elegant_luxmager';src:url('elegantlux-mager-webfont.eot');src:url('elegantlux-mager-webfont.eot?#iefix') format('embedded-opentype'),url('elegantlux-mager-webfont.woff') format('woff'),url('elegantlux-mager-webfont.woff2') format('woff2'),url('elegantlux-mager-webfont.ttf') format('truetype');font-weight:normal;font-style:normal}

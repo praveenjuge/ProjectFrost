@@ -1,0 +1,98 @@
+body{
+   font-size: 18px;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+main, footer {
+    padding-left: 240px;
+}    
+
+@media only screen and (max-width: 992px){
+main, footer {
+    padding-left: 0;
+}
+}
+
+/*notification*/
+
+.card-title{
+    border-bottom: 1px solid rgba(160,160,160,0.2);
+}
+
+.notfibox{
+    padding: 10px;
+}
+
+.notfi{
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.card-action a{
+    font-size: 15px;
+    color: #009688 !important;
+}
+
+
+
+nav{
+    background-color: #512DA8;
+}
+
+hr{
+    border-top:1px solid #7f8c8d;
+}
+
+.btn{
+    background-color: #009688;
+}
+
+#nav-mobile{
+    background-color: #eeeeee;
+}
+
+.sideactive{
+    color: #009688 !important;
+    border-left: 4px solid #009688;
+}
+
+.sidebut{
+    margin-left: 15px;
+}
+
+.profile{
+    margin: 20px 0px;
+}
+
+.info{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.photo{
+    border-radius: 100px;
+    height:60px;
+    margin: 0px 90px;
+}
+
+.side-link{
+    font-size: 16px;
+}
+
+.side-nav li{
+    text-align: left;
+    line-height: 50px;
+    padding-left: 30px;
+}
+
+.side-nav.fixed a{
+    padding: 0px;
+}
+
+.side-nav a{
+    font-size: 16px;
+    line-height: 50px;
+    height: 50px;
+    
+}
