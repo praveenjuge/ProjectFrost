@@ -86,7 +86,8 @@ input[type="submit"]:hover{background:black;}
     font-size: 38px;
 }
 
-.logoname a:hover{
+.logoname a:hover,
+.logoname a:focus{
     color: #27AD60;
 }
 
