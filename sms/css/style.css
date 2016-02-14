@@ -25,48 +25,42 @@ a:focus{
 
 .newsbox{
     -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
     background-color: #eeeeee;
     margin: 30px;
     margin-top: 50px;
     padding-bottom: 10px;
+    font-family: 'robotoregular',Georgia,Times,serif;
 }
 
 .recent{
     font-size: 21px;
     color: #c0392b;
-    font-family: 'robotoregular',Georgia,Times,serif;
     padding: 10px 0px;
     border-bottom: 1px solid #000;
 }
 
 .news{
-    margin: 5px 0px;
     padding: 10px;
     padding-left: 50px;
     text-align: left;
     font-size: 20px;
     color: black;
-    font-family: 'robotoregular',Georgia,Times,serif;
 }
 
 .date{
     color: #c0392b;
     font-size: 24px;
-/*    text-align: right;*/
 }
 
 .newstitle{
     font-size: 16px;
-/*    text-align: left;*/
 }
 
 /*Logo Section*/
 
 .logobg{
-
-    font-weight:1000;
     background: url(../images/hero.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -152,7 +146,6 @@ input[type="submit"]:hover{
 	background:#34495e;
 }
 
-
 .check{
     font-size: 18px;
     font-weight: 400;
@@ -161,20 +154,19 @@ input[type="submit"]:hover{
 
 @media (max-width:768px){
 	form {
-	padding: 12% 6%;
+	padding: 12% 0%;
 	}
 }
-
 @media (max-width:480px){
 	form {
-	padding: 12% 5%;
+	padding: 12% 0%;
 	}
 
 }
 @media (max-width:320px){
 
 	input[type="text"], input[type="password"] {
-	width: 90%;
+	width: 100%;
 	padding: 0.9em 1em 0.9em 1.7em;
 	color: #858282;
 	font-size: 16px;
@@ -185,7 +177,7 @@ input[type="submit"]:hover{
 	padding: 13px 10px;
 	}
 	form {
-	padding: 12% 4%;
+	padding: 12% 0%;
 	}
 	form li {
 	margin-bottom: 14px;
@@ -213,4 +205,40 @@ input[type="submit"]:hover{
 
 .flist li a:hover{
     color:black;
+}
+
+@media screen and (max-width: 45em) {
+   
+    .logohead{
+        font-size: 30px;
+        padding: 40px 0px;
+    }
+    
+    .news{
+    padding-left: 20px;
+}
+    
+        .flist li{
+    padding:10px 100px;
+}
+    
+}
+@media screen and (max-width: 28em) {
+    
+    .newsbox {
+        display: none;
+    }
+    
+    .logohead {
+        font-size: 20px;
+    }
+    
+    form li {
+        width: 100%;
+    }
+    
+    .flist li {
+        padding: 10px 60px;
+    }
+
 }
