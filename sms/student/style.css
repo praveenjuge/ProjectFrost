@@ -1,11 +1,11 @@
 body{
-   font-size: 18px;
+   font-size: 16px;
     color: #000000;
     background-color: #eeeeee;
 }
 
 main, footer {
-    padding-left: 240px;
+    padding-left: 260px;
 }    
 
 @media only screen and (max-width: 992px){
@@ -14,27 +14,49 @@ main, footer {
 }
 }
 
-/*notification*/
+.brand-logo{
+    left: 793px !important;
+}
 
+    
+
+/*notification*/
 .card-title{
     border-bottom: 1px solid rgba(160,160,160,0.2);
+    color: #c0392b;
+    font-size: 24px !important;
 }
 
-.notfibox{
-    padding: 10px;
+.card .card-action{
+    padding: 5px;
 }
+
+
 
 .notfi{
     padding: 5px 10px;
     text-align: left;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.card .card-content{
+    padding: 10px 30px;
 }
 
 .card-action a{
     font-size: 15px;
-    color: #009688 !important;
+    color:  #009688 !important;
 }
 
+.date{
+    font-size: 20px;
+    text-align: left;
+}
 
+.newstitle{
+    text-align: left;
+}
 
 nav{
     background-color: #512DA8;
@@ -62,10 +84,13 @@ hr{
 }
 
 .profile{
-    margin: 20px 0px;
+    padding: 20px 0px;
+    background-color: #bdc3c7;
+    margin-bottom: 10px;
 }
 
 .info{
+    color: #c0392b;
     font-size: 16px;
     font-weight: 700;
 }
@@ -73,7 +98,7 @@ hr{
 .photo{
     border-radius: 100px;
     height:60px;
-    margin: 0px 90px;
+    margin: 0px 100px;
 }
 
 .side-link{
@@ -82,9 +107,15 @@ hr{
 
 .side-nav li{
     text-align: left;
-    line-height: 50px;
+    line-height: 55px;
     padding-left: 30px;
 }
+
+
+.side-nav li i{
+    padding-right: 15px;
+}
+
 
 .side-nav.fixed a{
     padding: 0px;
@@ -92,7 +123,35 @@ hr{
 
 .side-nav a{
     font-size: 16px;
-    line-height: 50px;
-    height: 50px;
-    
+    line-height: 55px;
+    height: 55px;
+}
+
+/*Calender*/
+
+.fc-toolbar .fc-center{
+    color: #c0392b;
+}
+
+.fc-view{
+    color: #e74c3c;
+}
+
+.fc-unthemed .fc-today{
+     background-color: #bdc3c7; 
+}
+
+.fc-button-group button,
+.fc-today-button{
+    border: none;
+    border-radius: 0px !important;
+    color: #009688 !important;
+}
+
+.fc-event{
+    text-align: center;
+    padding: 3px 0px;
+    border: none;
+    border-radius: 0px;
+    background-color: #009688 !important;
 }

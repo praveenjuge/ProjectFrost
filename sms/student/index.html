@@ -29,8 +29,11 @@
    <div class="navbar-fixed">
     <nav  class="top-nav">
       <div class="nav-wrapper">
-               <a href="#" data-activates="nav-mobile" class="sidebut button-collapse top-nav full hide-on-large-only"><i class="mdi-navigation-menu"></i></a>
-          <ul class="right "><li><a class="waves-effect waves-light btn">Log Out</a></li></ul>
+<!--              <a class="brand-logo center">Home</a>-->
+               <a href="#" data-activates="nav-mobile" class="sidebut button-collapse top-nav full hide-on-large-only">
+                   <i class="mdi-navigation-menu"></i>
+               </a>
+          <ul class="right "><li><a href="#" class="waves-effect waves-light btn">Log Out</a></li></ul>
       </div>
     </nav>
   </div>
@@ -40,16 +43,15 @@
           <img class="photo" alt="My Photo" src="../images/fr-09.jpg"/>
           <span class="info">Praveen Juge - IT - II Year</span>
           </div>
-          <hr>
-          <a class="sideactive" href="#"><li class="side-link">Home</li></a>
-          <li class="side-link"><a href="#">Attendence</a></li>
-          <li class="side-link"><a href="#">Notes &amp; Assignments</a></li>
-          <li class="side-link"><a href="#">News &amp; Events</a></li>
-          <li class="side-link"><a href="#">Results</a></li>
-          <li class="side-link"><a href="#">Time Table</a></li>
-          <li class="side-link"><a href="#">Placement News</a></li>
-          <li class="side-link"><a href="#">Your Profile</a></li>
-          <li class="side-link"><a href="#">Settings</a></li> 
+          <a class="sideactive" href="#" ><li class="side-link"><i class="material-icons">home</i>Home</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">event_available</i>Attendence</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">book</i>Notes &amp; Assignments</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">event</i>News &amp; Events</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">assignment</i>Results</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">list</i>Time Table</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">supervisor_account</i>Placement News</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">mood</i>Your Profile</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">settings</i>Settings</li> </a>
       </ul>
 </header>
          
@@ -58,51 +60,83 @@
     <main>
         <div class="container-fluid">
             <div class="row">
+            
         <div class="col s12 m6">
           <div class="card grey lighten-4">
             <div class="card-content ">
               <span class="card-title">Recent Notifications</span>
               <div class="notfibox">
-              <p class="notfi"><i class="material-icons">chevron_right</i>New Time Table Announced.</p>
-              <p class="notfi"><i class="material-icons">chevron_right</i>National Conference on Application of Nanotechnology</p>
-              <p class="notfi"><i class="material-icons">chevron_right</i>National Conference on Information and Intelligent Technologies NCIIT'16</p>
-              <p class="notfi"><i class="material-icons">chevron_right</i>One Day Hands-on Training on Automotive Component Design</p>
-              <p class="notfi"><i class="material-icons">chevron_right</i>New Time Table Announced.</p>
+              <p class="notfi"><i class="material-icons">keyboard_arrow_right</i>New Time Table Announced.</p>
+              <p class="notfi"><i class="material-icons">keyboard_arrow_right</i>National Conference on Application of Nanotechnology</p>
+              <p class="notfi"><i class="material-icons">keyboard_arrow_right</i>National Conference on Information and Intelligent Technologies NCIIT'16</p>
+              <p class="notfi"><i class="material-icons">keyboard_arrow_right</i>One Day Hands-on Training on Automotive Component Design</p>
+              <p class="notfi"><i class="material-icons">keyboard_arrow_right</i>New Time Table Announced.</p>
               </div>
             </div>
             <div class="card-action">
-              <a href="#">View More</a>
+              <a href="#" class="waves-effect waves-teal btn-flat">VIEW MORE</a>
             </div>
           </div>
-<!--
-          <a class="waves-effect waves-light btn">Stuff</a>
-<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
-<a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
--->
         </div>
+        
+        <div class="col s12 m6">
+          <div class="card grey lighten-4">
+            <div class="card-content ">
+                <span class="card-title">Recent News &amp; Events</span>
+                       
+                <div class="notfibox">
+                <div class="date">23, January</div>
+                <div class="newstitle">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</div>
+                </div>
+                       
+                <div class="notfibox">
+                <div class="date">12, January</div>
+                <div class="newstitle">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</div>
+                </div>
+                       
+                <div class="notfibox">
+                <div class="date">2, January</div>
+                <div class="newstitle">National Conference on Application of Nanotechnology - B.E. Civil Dept.</div>
+                </div>
+                       
+                <div class="notfibox">
+                <div class="date">23, December</div>
+                <div class="newstitle">National Conference on Application of Nanotechnology - B.E. Civil Dept.</div>
+                </div>
+                
+            </div>
+            <div class="card-action">
+              <a href="#" class="waves-effect waves-teal btn-flat">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+        
       </div>
         </div>
         
         <div class="container-fluid">
             <div class="row">
         <div class="col m12">
-               <div id='calendar'></div>
+          <div class="card grey lighten-4">
+            <div class="card-content ">
+                <div id='calendar'></div>
+            </div> 
                 </div>
             </div>
         </div>
     </main>
     
     <footer>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <ul class="flist">
-                        <li class="li"><a href="#">Free Demo</a></li>
-                        <li class="li"><a href="#">Help</a></li>
-                        <li class="li"><a href="#">Github</a></li>
-                        <li class="li"><a href="#">Core Team</a></li>
-                        <li class="li"><a href="#">Contact</a></li>
-                        <li class="li"><a href="#">Features</a></li>
+                        <li class="li"><a href="#" class="waves-effect waves-teal btn-flat">Free Demo</a></li>
+                        <li class="li"><a href="#" class="waves-effect waves-teal btn-flat">Help</a></li>
+                        <li class="li"><a href="#" class="waves-effect waves-teal btn-flat">Github</a></li>
+                        <li class="li"><a href="#" class="waves-effect waves-teal btn-flat">Core Team</a></li>
+                        <li class="li"><a href="#" class="waves-effect waves-teal btn-flat">Contact</a></li>
+                        <li class="li"><a href="#" class="waves-effect waves-teal btn-flat">Features</a></li>
                     </ul>
                 </div>
             </div>
@@ -117,13 +151,127 @@
     <script src="script.js"></script>
     
     <script type="text/javascript">
-        $(".button-collapse").sideNav();
+       $('.button-collapse').sideNav({
+      menuWidth: 260, 
+      edge: 'left'
+    }
+  );
         
-        $(document).ready(function() {
-            $('#calendar').fullCalendar({
-                
-            })
-        });
+//        $(document).ready(function() {
+//            $('#calendar').fullCalendar({ 
+//                editable: 'true',
+//                events: [
+//        {
+//            title  : 'First Review',
+//            start  : '2016-02-17'
+//        },
+//        {
+//            title  : 'Meeting!',
+//            start  : '2016-02-20',
+//            end    : '2016-02-24'
+//        },
+//        {
+//            title  : 'Some Event',
+//            start  : '2016-02-02T12:30:00',
+//            allDay : false // will make the time show
+//        }
+//    ]
+//            }) });
+        
+        $(document).ready(function()
+		{
+			var date = new Date();
+			var d = date.getDate();
+			var m = date.getMonth();
+			var y = date.getFullYear();
+			
+			var calendar = $('#calendar').fullCalendar(
+			{
+
+				header:
+				{
+					left: 'prev,next today',
+					center: 'title',
+					right: 'month,agendaWeek,agendaDay'
+				},
+
+				defaultView: 'month',
+
+				selectable: true,
+				selectHelper: true,
+
+				select: function(start, end, allDay)
+				{
+
+					var title = prompt('Event Title:');
+
+					if (title)
+					{
+						calendar.fullCalendar('renderEvent',
+							{
+								title: title,
+								start: start,
+								end: end,
+								allDay: allDay
+							},
+							true 
+						);
+					}
+					calendar.fullCalendar('unselect');
+				},
+
+				editable: true,
+
+				events: [
+					{
+						title: 'All Day Event',
+						start: new Date(y, m, 1)
+					},
+					{
+						title: 'Long Event',
+						start: new Date(y, m, d-5),
+						end: new Date(y, m, d-2)
+					},
+					{
+						id: 999,
+						title: 'Repeating Event',
+						start: new Date(y, m, d-3, 16, 0),
+						allDay: false
+					},
+					{
+						id: 999,
+						title: 'First Review',
+						start: new Date(y, m, d+4, 16, 0),
+						allDay: false
+					},
+					{
+						title: 'Meeting',
+						start: new Date(y, m, d, 10, 30),
+						allDay: false
+					},
+					{
+						title: 'Lunch',
+						start: new Date(y, m, d, 12, 0),
+						end: new Date(y, m, d, 14, 0),
+						allDay: false
+					},
+					{
+						title: 'Birthday Party',
+						start: new Date(y, m, d+1, 19, 0),
+						end: new Date(y, m, d+1, 22, 30),
+						allDay: false
+					},
+					{
+						title: 'Open the Login Page',
+						start: new Date(y, m, 28),
+						end: new Date(y, m, 29),
+						url: '../'
+					}
+				]
+			});
+			
+		});
+
       </script>
   </body>
 </html>
