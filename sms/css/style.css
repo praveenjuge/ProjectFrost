@@ -1,25 +1,30 @@
 /*Main Contents*/
 body{
-   font-size: 30px;
     color: #000000;
     background-color: #eeeeee;
     font-weight: 500;
     text-align: center;  
 }
 
-i{
-    vertical-align: middle;
+i{vertical-align: middle;}
+
+a{color: black;}
+
+a:hover,a:focus{color: #2c3e50; text-decoration: none;}
+
+main, footer {padding-left: 260px;}    
+
+@media only screen and (max-width: 992px){
+    
+    main, footer {padding-left: 0;}
+    
 }
 
-a{
-    color: black;
-}
+.brand-logo{left: 793px !important;}
 
-a:hover,
-a:focus{
-    color: #2c3e50;
-    text-decoration: none;
-}
+
+
+/*Login Page Styles*/
 
 /*newsbox*/
 
@@ -49,16 +54,11 @@ a:focus{
     color: black;
 }
 
-.date{
-    color: #c0392b;
-    font-size: 24px;
-}
+.date{color: #c0392b;font-size: 24px;}
 
-.newstitle{
-    font-size: 16px;
-}
+.newstitle{font-size: 16px;}
 
-/*Logo Section*/
+/*Main Section*/
 
 .logobg{
     background: url(../images/hero.jpg) no-repeat center center;
@@ -70,6 +70,7 @@ a:focus{
     color: #fff;
     font-size: 40px;
     padding: 40px 10px;
+    margin-top: 35px;
 }
 
 .fpass{
@@ -79,27 +80,15 @@ a:focus{
     color: #eeeeee;
 }
 
-.fpass a{
-    color: #eeeeee;
-}
+.fpass a{color: #eeeeee;}
 
-.fpass a:hover{
-    color: #95a5a6;
-}
+.fpass a:hover{color: #95a5a6;}
 
-.box{
-    width:100%;
-}
+.box{width:100%;}
 
-.box hr{
-    width: 80px;
-    border-bottom: 2px solid #eeeeee;
-}
+.box hr{width: 80px; border-bottom: 2px solid #eeeeee;}
 
-form {
-	padding: 28% 1%;
-    margin: auto;
-}
+form {padding: 28% 1%; margin: auto;}
 
 form li{
     margin: auto;
@@ -107,15 +96,19 @@ form li{
 	list-style:none;
 	margin-bottom:50px;
 	width:70%;
-	background:#dfdfdf;
+    background:#dfdfdf;
+
     -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
 -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
 box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+
 }
 
+
 input[type="text"], input[type="password"] {
+    text-indent: 20px;
 	width: 100%;
-	padding: 0.6em 1em 0.6em 1em;
+	margin: 0em 0em 0em 0em;
 	color: #858282;
 	font-size: 18px;
 	outline: none;
@@ -125,9 +118,8 @@ input[type="text"], input[type="password"] {
     margin: auto;
 	}
 
-.submit {
-    margin-top: 80px;
-}
+
+.submit {margin-top: 80px;}
 
 .submit input[type="submit"]{
 	font-size: 20px;
@@ -142,46 +134,170 @@ input[type="text"], input[type="password"] {
 	background: #2c3e50;
 }
 
-input[type="submit"]:hover{
-	background:#34495e;
-}
+input[type="submit"]:hover{background:#34495e;}
 
-.check{
-    font-size: 18px;
-    font-weight: 400;
-    color: #eeeeee;
-}
+.check{margin-bottom: 20px; font-size: 18px; font-weight: 400; color: #eeeeee;}
 
 @media (max-width:768px){
-	form {
-	padding: 12% 0%;
-	}
+	form {padding: 12% 0%;}
 }
 @media (max-width:480px){
-	form {
-	padding: 12% 0%;
-	}
-
+	form {padding: 12% 0%;}
 }
 @media (max-width:320px){
 
 	input[type="text"], input[type="password"] {
-	width: 100%;
-	padding: 0.9em 1em 0.9em 1.7em;
-	color: #858282;
 	font-size: 16px;
 	}
     
-	.submit input[type="submit"] {
-	font-size: 18px;
-	padding: 13px 10px;
-	}
-	form {
-	padding: 12% 0%;
-	}
-	form li {
-	margin-bottom: 14px;
-	}
+	.submit input[type="submit"] {font-size: 18px; padding: 13px 10px;}
+    
+	form {padding: 12% 0%;}
+    
+	form li {margin-bottom: 30px;}
+}
+
+
+
+
+
+
+
+/*notification*/
+.card-title{
+    border-bottom: 1px solid rgba(160,160,160,0.2);
+    color: #c0392b;
+    font-size: 24px !important;
+}
+
+.card .card-action{
+    padding: 5px;
+}
+
+
+
+.notfi{
+    padding: 5px 10px;
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.card .card-content{
+    padding: 10px 30px;
+}
+
+.card-action a{
+    font-size: 15px;
+    color:  #009688 !important;
+}
+
+.date{
+    font-size: 20px;
+    color: #c0392b;
+    text-align: left;
+}
+
+.newstitle{
+    text-align: left;
+}
+
+nav{
+    background-color: #512DA8;
+}
+
+hr{
+    border-top:1px solid #7f8c8d;
+}
+
+.btn{
+    background-color: #009688;
+}
+
+#nav-mobile{
+    background-color: #eeeeee;
+}
+
+.sideactive{
+    color: #009688 !important;
+    border-left: 4px solid #009688;
+}
+
+.sidebut{
+    margin-left: 15px;
+}
+
+.profile{
+    padding: 20px 0px;
+    background-color: #bdc3c7;
+    margin-bottom: 10px;
+}
+
+.info{
+    color: #c0392b;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.photo{
+    border-radius: 100px;
+    height:60px;
+    margin: 0px 100px;
+}
+
+.side-link{
+    font-size: 16px;
+}
+
+.side-nav li{
+    text-align: left;
+    line-height: 55px;
+    padding-left: 30px;
+}
+
+
+.side-nav li i{
+    padding-right: 15px;
+}
+
+
+.side-nav.fixed a{
+    padding: 0px;
+}
+
+.side-nav a{
+    font-size: 16px;
+    line-height: 55px;
+    height: 55px;
+}
+
+/*Calender*/
+
+.fc-toolbar .fc-left{
+    color: #c0392b;
+}
+
+.fc-view{
+    color: #e74c3c;
+}
+
+.fc-unthemed .fc-today{
+     background-color: #bdc3c7; 
+}
+
+.fc-button-group button,
+.fc-today-button{
+    border: none;
+    border-radius: 0px !important;
+    color: #009688 !important;
+}
+
+.fc-event{
+    text-align: center;
+    padding: 3px 0px;
+    border: none;
+    border-radius: 0px;
+    background-color: #009688 !important;
 }
 
 /*footer*/
@@ -194,25 +310,16 @@ input[type="submit"]:hover{
     font-weight: 600;
 }
 
-.flist li{
-    display: inline-block;
-    padding:10px 10px;
-}
+.flist li{display: inline-block; padding:10px 10px;}
 
-.flist li a{
-    padding: 0 1rem;
-}
+.flist li a{padding: 0 1rem;}
 
-.flist li a:hover{
-    color:black;
-}
+.flist li a:hover{color:black;}
 
+
+
+/*Media Query*/
 @media screen and (max-width: 45em) {
-   
-    .logohead{
-        font-size: 30px;
-        padding: 40px 0px;
-    }
     
     .news{
     padding-left: 20px;
@@ -222,16 +329,19 @@ input[type="submit"]:hover{
     padding:10px 100px;
 }
     
+    .card .card-content{
+    padding: 10px 20px;
+}
+    
+/*    login Page*/
+    .logohead{font-size: 30px; padding: 40px 0px;}
+    
+    .news{padding-left: 20px;}
+    
+    .flist li{padding:10px 100px;}
+    
 }
 @media screen and (max-width: 28em) {
-    
-    .newsbox {
-        display: none;
-    }
-    
-    .logohead {
-        font-size: 20px;
-    }
     
     form li {
         width: 100%;
@@ -240,5 +350,15 @@ input[type="submit"]:hover{
     .flist li {
         padding: 10px 60px;
     }
+    
+    /*    login Page*/
+    
+     .newsbox {display: none;}
+    
+    .logohead {font-size: 20px;}
+    
+    form li {width: 100%;}
+    
+    .flist li {padding: 10px 60px;}
 
 }
