@@ -2,7 +2,7 @@
 body{
     color: #000000;
     background-color: #eeeeee;
-    font-weight: 500;
+/*    font-weight: 500;*/
     text-align: center;  
 }
 
@@ -14,11 +14,7 @@ a:hover,a:focus{color: #2c3e50; text-decoration: none;}
 
 main, footer {padding-left: 260px;}    
 
-@media only screen and (max-width: 992px){
-    
-    main, footer {padding-left: 0;}
-    
-}
+@media only screen and (max-width: 992px){main, footer {padding-left: 0;}}
 
 .brand-logo{left: 793px !important;}
 
@@ -160,9 +156,6 @@ input[type="submit"]:hover{background:#34495e;}
 
 
 
-
-
-
 /*notification*/
 .card-title{
     border-bottom: 1px solid rgba(160,160,160,0.2);
@@ -170,11 +163,7 @@ input[type="submit"]:hover{background:#34495e;}
     font-size: 24px !important;
 }
 
-.card .card-action{
-    padding: 5px;
-}
-
-
+.card .card-action{padding: 5px;}
 
 .notfi{
     padding: 5px 10px;
@@ -183,14 +172,9 @@ input[type="submit"]:hover{background:#34495e;}
     font-size: 16px;
 }
 
-.card .card-content{
-    padding: 10px 30px;
-}
+.card .card-content{padding: 10px 30px;}
 
-.card-action a{
-    font-size: 15px;
-    color:  #009688 !important;
-}
+.card-action a{font-size: 15px; color:#009688 !important;}
 
 .date{
     font-size: 20px;
@@ -198,56 +182,47 @@ input[type="submit"]:hover{background:#34495e;}
     text-align: left;
 }
 
-.newstitle{
-    text-align: left;
-}
+.newstitle{text-align: left;}
 
-nav{
-    background-color: #512DA8;
-}
+nav{background-color: #512DA8;}
 
-hr{
-    border-top:1px solid #7f8c8d;
-}
+hr{border-top:1px solid #7f8c8d;}
 
-.btn{
-    background-color: #009688;
-}
+.btn{background-color: #009688;}
 
-#nav-mobile{
-    background-color: #eeeeee;
-}
+#nav-mobile{background-color: #fff;}
 
-.sideactive{
-    color: #009688 !important;
-    border-left: 4px solid #009688;
-}
+.sideactive{color: #009688 !important; border-left: 4px solid #009688;}
 
-.sidebut{
-    margin-left: 15px;
-}
+.sidebut{margin-left: 15px;}
 
 .profile{
-    padding: 20px 0px;
-    background-color: #bdc3c7;
+    padding: 15px 15px;
+    background-color: #009688;
     margin-bottom: 10px;
+    background-image: url(../images/pro.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .info{
-    color: #c0392b;
     font-size: 16px;
-    font-weight: 700;
+    text-align: left;
+    color: white;
 }
 
 .photo{
-    border-radius: 100px;
-    height:60px;
-    margin: 0px 100px;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
-.side-link{
-    font-size: 16px;
+.photo img{
+    border-radius: 150px;
+    height:60px;
 }
+
+.side-link{font-size: 16px;}
 
 .side-nav li{
     text-align: left;
@@ -256,9 +231,7 @@ hr{
 }
 
 
-.side-nav li i{
-    padding-right: 15px;
-}
+.side-nav li i{padding-right: 5px;}
 
 
 .side-nav.fixed a{
