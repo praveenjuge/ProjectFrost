@@ -48,30 +48,28 @@ body {
  .darkred::selection {
     background: #27AD60;
 }
-/*Navigation*/
- .navbar-nav{
-    float: none;
+
+hr {
+    border-top: 1px solid #7f8c8d;
+    margin-bottom: 0px;
 }
+
+
+/*TOP Navigation*/
+
+ .navbar-nav{float: none;}
+
  .anav{
      background-color: #fff;
      color: #eeeeee;
      padding: 0px 0px;
      border: none;
 }
- .dropdown span{
-     margin-left: 15px;
-}
- .dropdown-toggle{
-     margin-right: 60px;
-     padding: 0px 15px !important;
-}
- .prodrop{
-     padding: 0px;
-     list-style: none;
-}
- .prodrop li{
-     display: inline-block;
-}
+
+ .dropdown span{margin-left: 15px;}
+ .dropdown-toggle{margin-right: 60px; padding: 0px 15px !important;}
+ .prodrop{padding: 0px;list-style: none;}
+ .prodrop li{display: inline-block;}
 
  .photoround{
      margin: 10px 0px;
@@ -168,6 +166,8 @@ body {
      display: inline-block;
      padding:10px 30px;
 }
+
+
  .register{
      min-height: 600px;
      margin-top: 74px;
@@ -176,6 +176,8 @@ body {
      font-size: 50px;
      margin: 25px 0px;
      margin-bottom: 40px;
+     padding-bottom: 10px;
+     border-bottom: #890909 2px solid;
 }
  .formlabel{
      font-size: 35px;
@@ -223,6 +225,12 @@ body {
     padding: 10px 70px;
 }
 
+.bluebox:hover{
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+}
+
 .bluebox{
     font-size: 36px;
     line-height: 100px;
@@ -259,10 +267,6 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
     padding-left: 30px;
 }
 
-.sitestat{
-    
-}
-
 .arrow{
         font-size: 30px;
     padding: 40px 0px;
@@ -277,4 +281,90 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 .sitedesc{
     font-size: 22px;
     text-align: left;
+}
+
+
+/*ADD NEW SITE*/
+
+#siteForm{text-align: center;margin-top: 40px;}
+
+#siteForm input{margin-bottom: 80px;width: 100%;}
+
+#siteForm label{font-size: 28px;}
+
+#siteForm .submit{
+    width: 100%;
+    border: none;
+    padding: 10px 0px;
+    background-color: #890909;
+    color: white;
+    font-size: 24px;
+}
+
+#siteMessage textarea{width: 100%;}
+
+
+/*SINGLE SITE*/
+
+/*SIDEBAR*/
+.pjnav {
+    width: 240px;
+    margin-top: 60px;
+    float: left; 
+    position: fixed;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    background-color: #eee;
+    border-right: #7f8c8d 1px solid;
+}
+
+.pjnavul ul {padding: 0px; font-size: 24px; }
+
+.pjnavul li {
+    list-style-type: none; 
+    margin: 0px; 
+    overflow: hidden; 
+    text-align: left;
+    padding: 15px 0px;
+}
+
+.pjnavul a{
+    color:#2c3e50;
+    padding: 15px 20px;
+        text-align: right;
+}
+
+.pjnavul i{
+    padding-right: 20px;
+
+}
+
+.sideactive{
+    color:#890909 !important;
+    border-left: 2px #890909 solid;
+}
+
+.sitenamesingle{
+    margin: 15px 0px;
+    font-size: 22px;
+}
+
+.details img{
+    border: 1px #000 solid;
+    height: 75px;
+}
+
+.online{
+    border: none;
+    background-color: #27AD60;
+    color: white;
+    padding: 0px 18px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.problem{
+    font-size: 16px;
 }
