@@ -23,33 +23,74 @@
   <body>
   
    <header>
-   
    <div class="navbar-fixed">
     <nav  class="top-nav">
       <div class="nav-wrapper">
-    <a href="#" data-activates="nav-mobile" class="sidebut button-collapse top-nav full hide-on-large-only"><i class="mdi-navigation-menu"></i></a>
-    <ul class="right "><li><a href="#" class="waves-effect waves-light btn">Log Out</a></li></ul>
+<!--              <a class="brand-logo center">Home</a>-->
+               <a href="#" data-activates="nav-mobile" class="sidebut button-collapse top-nav full hide-on-large-only">
+                   <i class="mdi-navigation-menu"></i>
+               </a>
+          <ul class="right "><li><a href="#" class="waves-effect waves-light btn">Log Out</a></li></ul>
       </div>
     </nav>
   </div>
         
-<ul id="nav-mobile" class="side-nav fixed">
-<div class="profile">
-    <img class="photo" alt="My Photo" src="../../images/fr-09.jpg"/>
-        <span class="info">Praveen Juge - IT - II Year</span>
-</div>
-<a href="../" ><li class="side-link"><i class="material-icons">home</i>Home</li></a>
-<a class="sideactive" href="#"><li class="side-link"><i class="material-icons">event_available</i>Attendence</li></a>
-<a href="#"><li class="side-link"><i class="material-icons">book</i>Notes &amp; Assignments</li></a>
-<a href="#"><li class="side-link"><i class="material-icons">event</i>News &amp; Events</li></a>
-<a href="#"><li class="side-link"><i class="material-icons">assignment</i>Results</li></a>
-<a href="#"><li class="side-link"><i class="material-icons">list</i>Time Table</li></a>
-<a href="#"><li class="side-link"><i class="material-icons">supervisor_account</i>Placement News</li></a>
-<a href="#"><li class="side-link"><i class="material-icons">mood</i>Your Profile</li></a>
-<a href="#"><li class="side-link"><i class="material-icons">settings</i>Settings</li> </a>
-</ul>
+      <ul id="nav-mobile" class="side-nav fixed">
+         <div class="profile">
+          <div class="photo" >
+          <img alt="My Photo" src="../../images/fr-09.jpg"/>
+          </div>
+          <div class="info">Praveen Juge - IT - II Year</div>
+          </div>
+          
+          <a href="../" >
+          <li class="side-link"><i class="material-icons">home</i>Home</li></a>
+          
+          <a class="sideactive">
+          <li class="side-link"><i class="material-icons">event_available</i>Attendence</li></a>
+          
+          <a href="#">
+          <li class="side-link"><i class="material-icons">book</i>Notes &amp; Assignments</li></a>
+          
+          <a href="#">
+          <li class="side-link"><i class="material-icons">event</i>News &amp; Events</li></a>
+          
+          <a href="#">
+          <li class="side-link"><i class="material-icons">assignment</i>Results</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">list</i>Time Table</li></a>
+          <a href="#">
+          <li class="side-link"><i class="material-icons">supervisor_account</i>Placement News</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">mood</i>Your Profile</li></a>
+          <a href="#"><li class="side-link"><i class="material-icons">settings</i>Settings</li> </a>
+      </ul>
 </header>
          
+
+<main>
+    <div class="container-fluid">
+        <div class="row daysection">
+<div class="col m4 s12"><span class="day ">145 days </span>Total</div>
+<div class="col m4 s12"><span class="day">45 days </span>Attended</div>
+<div class="col m4 s12"><span class="day">15 days </span>Missed</div>
+       
+        </div>
+        <hr>
+    </div>
+    
+    
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col m6">
+        <div class="card grey lighten-4">
+            <div class="card-content">
+                <div id='calendar'></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+</main>
 
 <!--
 <main>
@@ -191,53 +232,55 @@
 					calendar.fullCalendar('unselect');
 				},
 
-				editable: true,
+				editable: false, // Don't allow editing of events
+                handleWindowResize: true,
+                header: false, // Hide buttons/titles
+                displayEventTime: false,
+                
 
 				events: [
 					{
-						title: 'All Day Event',
+						title: 'Y',
+                        color: '#c0392b',
 						start: new Date(y, m, 1)
-					},
-					{
-						title: 'Long Event',
-						start: new Date(y, m, d-5),
-						end: new Date(y, m, d-2)
-					},
-					{
-						id: 999,
-						title: 'Repeating Event',
-						start: new Date(y, m, d-3, 16, 0),
-						allDay: false
-					},
-					{
-						id: 999,
-						title: 'First Review',
-						start: new Date(y, m, d+4, 16, 0),
-						allDay: false
-					},
-					{
-						title: 'Meeting',
-						start: new Date(y, m, d, 10, 30),
-						allDay: false
-					},
-					{
-						title: 'Lunch',
-						start: new Date(y, m, d, 12, 0),
-						end: new Date(y, m, d, 14, 0),
-						allDay: false
-					},
-					{
-						title: 'Birthday Party',
-						start: new Date(y, m, d+1, 19, 0),
-						end: new Date(y, m, d+1, 22, 30),
-						allDay: false
-					},
-					{
-						title: 'Open the Login Page',
-						start: new Date(y, m, 28),
-						end: new Date(y, m, 29),
-						url: '../'
+					},{
+						title: 'Y',
+                        color: '#c0392b',
+						start: new Date(y, m, 2)
+					},{
+						title: 'Y',
+                        color: '#c0392b',
+						start: new Date(y, m, 3)
+					},{
+						title: 'Y',
+                        color: '#c0392b',
+						start: new Date(y, m, 4)
+					},{
+						title: 'Y',
+                        color: '#c0392b',
+						start: new Date(y, m, 5)
+					},{
+						title: 'Y',
+                        color: '#c0392b',
+						start: new Date(y, m, 6)
+					},{
+						title: 'Y',
+                        color: '#c0392b',
+						start: new Date(y, m, 7)
+					},{
+						title: 'N',
+                        color: '#c0392b',
+						start: new Date(y, m, 8)
+					},{
+						title: 'N',
+                        color: '#c0392b',
+						start: new Date(y, m, 9)
+					},{
+						title: 'N',
+                        background: '#000',
+						start: new Date(y, m, 10)
 					}
+					
 				]
 			});
 			

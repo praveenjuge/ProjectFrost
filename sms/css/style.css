@@ -8,6 +8,8 @@ body{
 
 i{vertical-align: middle;}
 
+hr{border-top:1px solid #7f8c8d;}
+
 a{color: black;}
 
 a:hover,a:focus{color: #2c3e50; text-decoration: none;}
@@ -17,6 +19,15 @@ main, footer {padding-left: 260px;}
 @media only screen and (max-width: 992px){main, footer {padding-left: 0;}}
 
 .brand-logo{left: 793px !important;}
+
+
+/*ATTENDENCE PAGE STYLES*/
+
+.daysection{margin: 20px 0px; font-size: 30px;}
+
+.daysection .day{color: #009688;}
+
+.attendcal{height: 500px;}
 
 
 /*Login Page Styles*/
@@ -93,11 +104,9 @@ form li{
 	margin-bottom:50px;
 	width:70%;
     background:#dfdfdf;
-
     -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
--moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
-
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
 }
 
 input[type="text"], input[type="password"] {
@@ -157,13 +166,13 @@ input[type="submit"]:hover{background:#34495e;}
 
 nav{background-color: #512DA8;}
 
-hr{border-top:1px solid #7f8c8d;}
-
 .btn{background-color: #009688;}
 
 #nav-mobile{background-color: #fff;}
 
 .sideactive{color: #009688 !important; border-left: 4px solid #009688;}
+
+.sideactive li{padding-left: 16px !important;}
 
 .sidebut{margin-left: 15px;}
 
@@ -265,20 +274,14 @@ hr{border-top:1px solid #7f8c8d;}
     background-color: #009688 !important;
 }
 
+
+
+
+
 /*footer*/
-
-.flist{
-    font-size: 18px;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    font-weight: 600;
-}
-
+.flist{font-size: 18px; list-style: none; margin: 0px; padding: 0px; font-weight: 600;}
 .flist li{display: inline-block; padding:10px 10px;}
-
 .flist li a{padding: 0 1rem;}
-
 .flist li a:hover{color:black;}
 
 
