@@ -26,15 +26,11 @@ main, footer {padding-left: 260px;}
 
 .daysection .day{color: #009688;}
 
-.daysection .card-content{padding:20px 30px !important;}
+.daysection .card-content{padding:30px 30px !important;}
 
 .attendcal{height: 500px;}
 
-.subtitle{
-    font-size: 20px;
-    color: white;
-    margin-bottom: 10px;
-}
+.subtitle{font-size: 18px;color: white;margin-bottom: 10px;}
 
 
 /*Login Page Styles*/
@@ -42,53 +38,27 @@ main, footer {padding-left: 260px;}
 
 /*newsbox*/
 
-.newsbox{
-    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
-    background-color: #eeeeee;
-    margin: 30px;
-    margin-top: 50px;
-    padding-bottom: 10px;
-    font-family: 'robotoregular',Georgia,Times,serif;
-}
+.newsbox{margin: 30px; margin-top: 50px; padding-bottom: 10px;}
 
-.recent{
-    font-size: 21px;
-    color: #c0392b;
-    padding: 10px 0px;
-    border-bottom: 1px solid #000;
-}
+.newsbox hr{margin: 0px;}
 
-.news{
-    padding: 10px;
-    padding-left: 50px;
-    text-align: left;
-    font-size: 20px;
-    color: black;
-}
+.recent{font-size: 21px; color: #c0392b; padding: 10px 0px;}
 
-.date{color: #c0392b;font-size: 24px;}
+.news{padding: 10px 40px; color: black;}
 
-.newstitle{font-size: 16px;}
+.date{color: #c0392b; font-size: 16px;}
+
+.newstitle{font-size: 18px;}
 
 /*Main Section*/
 
-.logobg{
-    background: url(../images/hero.jpg) no-repeat center center;
-    background-size: cover;
-}
+.logobg{background: url(../images/hero.jpg) no-repeat center center; background-size: cover;}
 
-.logohead{
-    font-family: 'robotothin',Georgia,Times,serif;
-    color: #fff;
-    font-size: 40px;
-    padding: 40px 10px;
-    margin-top: 35px;
-}
+.smshead{font-family: 'robotothin',Georgia,Times,serif; 
+    font-size: 40px; color: #fff; margin-top: 35px;}
 
 .fpass{
-    padding-top: 30px;
+    margin-top: 30px;
     font-size: 16px;
     position: relative;
     color: #eeeeee;
@@ -100,7 +70,7 @@ main, footer {padding-left: 260px;}
 
 .box{width:100%;}
 
-.box hr{width: 80px; border-bottom: 2px solid #eeeeee;}
+.box hr{width: 80px; border-top: 2px solid #eeeeee;}
 
 form {padding: 28% 1%; margin: auto;}
 
@@ -110,43 +80,14 @@ form li{
 	list-style:none;
 	margin-bottom:50px;
 	width:70%;
-    background:#dfdfdf;
-    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+    background-color: #eeeeee;
 }
 
-input[type="text"], input[type="password"] {
-    text-indent: 20px;
-	width: 100%;
-	margin: 0em 0em 0em 0em;
-	color: #858282;
-	font-size: 18px;
-	outline: none;
-	background: none;
-	font-weight: 500;
-	border: none;
-    margin: auto;
-	}
+input[type="text"], input[type="password"] {margin: auto; text-indent: 20px; color: black;}
 
-.submit {margin-top: 80px;}
+.submit {margin-bottom:50px; width:70%;}
 
-.submit input[type="submit"]{
-	font-size: 20px;
-    margin-bottom: -30px;
-	font-weight: 400;
-	color: #fff;
-	cursor: pointer;
-	outline: none;
-	padding: 11px 10px;
-	width: 100%;
-	border: none;
-	background: #2c3e50;
-}
-
-input[type="submit"]:hover{background:#34495e;}
-
-.check{margin-bottom: 20px; font-size: 18px; font-weight: 400; color: #eeeeee;}
+.check{margin-bottom: 30px; font-size: 16px; font-weight: 400; color: #eeeeee;}
 
 @media (max-width:768px){
 	form {padding: 12% 0%;}
@@ -155,7 +96,6 @@ input[type="submit"]:hover{background:#34495e;}
 	form {padding: 12% 0%;}
 }
 @media (max-width:320px){
-
 	input[type="text"], input[type="password"] {
 	font-size: 16px;
 	}
