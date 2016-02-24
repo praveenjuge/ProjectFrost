@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/websited/analytics/nvd3-master/package.js",
+        "C:/websited/analytics/nvd3-master/GruntFile.js",
+        "C:/websited/analytics/nvd3-master/test/testScript.js",
+        "C:/websited/analytics/nvd3-master/test/stream_layers.js"
+    ]
+}

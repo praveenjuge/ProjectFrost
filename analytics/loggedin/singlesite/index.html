@@ -11,6 +11,7 @@
     <link href="../specificstyle.css" rel="stylesheet">
     <link href="../../fonts/font-awesome.css" rel="stylesheet">
     <link href="../../fonts/fonts.css" rel="stylesheet">
+    <link href="../../css/nv.d3.css" rel="stylesheet">
     <script src="../pace/pace.min.js"></script>
     
 
@@ -72,10 +73,44 @@
     </aside>
   </section>           
             
-  <section class="dash">
-    <div class="container">
+  <section class="dashboard">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 dashreport">
+                <div class="col-md-6">
+                    <div class="sitevisit darkred">372</div>
+                    <div class="sitedesc">Online Now</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sitevisit darkred">156</div>
+                    <div class="sitedesc">New Members</div>
+                </div>
+            </div>
+        </div>
         
     </div>
+    
+    <hr>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <svg id="chart1" style='height:300px'></svg>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"><svg id="test1" style='height:300px'></svg></div>
+            <div class="col-md-4"><svg id="test2" style='height:300px'></svg></div>
+            <div class="col-md-4"><svg id="test3" style='height:300px'></svg></div>
+            <div class="col-md-4"><svg id="test4" style='height:300px'></svg></div>
+        </div>
+    </div>
+    
   </section>
 
     
@@ -103,7 +138,10 @@
 
  <script src="../../js/jquery-1.10.2.min.js"></script>
  <script src="../../js/bootstrap.min.js"></script>
+ <script src="../../js/d3.min.js"></script>
+ <script src="../../js/nv.d3.min.js"></script>
+ <script src="../../js/chart.js"></script>
  <script type="text/javascript">
       $('.dropdown-toggle').dropdown();
- </script>
+ </script> 
 </body></html>

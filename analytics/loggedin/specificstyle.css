@@ -368,3 +368,25 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 .problem{
     font-size: 16px;
 }
+
+
+.dashboard{
+    margin-left: 240px;
+    margin-top: 80px;
+}
+
+.dashreport{
+     border-right: 1px solid #2c3e50;
+}
+
+
+.sitevisit{
+    font-size: 55px;
+    text-align: left;
+    line-height: 70px;
+}
+
+.sitedesc{
+    font-size: 22px;
+    text-align: left;
+}
