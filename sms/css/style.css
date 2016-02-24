@@ -8,7 +8,7 @@ body{
 
 i{vertical-align: middle;}
 
-hr{border-top:1px solid #7f8c8d;}
+hr{border-top:1px solid #bdbdbd;}
 
 a{color: black;}
 
@@ -23,11 +23,19 @@ main, footer {padding-left: 260px;}
 
 /*ATTENDENCE PAGE STYLES*/
 
-.daysection{margin: 20px 0px; font-size: 30px;}
+.daysection{margin: 10px 0px; font-size: 35px; }
 
 .daysection .day{color: #009688;}
 
+.daysection .card-content{padding:20px 30px !important;}
+
 .attendcal{height: 500px;}
+
+.subtitle{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
 
 
 /*Login Page Styles*/
@@ -253,11 +261,21 @@ nav{background-color: #512DA8;}
 
 /*Calender*/
 
-.fc-toolbar .fc-left{color: #c0392b;}
+.fc-toolbar,.fc-left,.fc-center{color: #c0392b;}
 
 .fc-view{color: #e74c3c;}
 
 .fc-unthemed .fc-today{background-color: #bdc3c7; }
+
+.fc-button{
+    border: none;
+}
+
+.fc-button:hover,
+.fc-button:focus,{
+    background-color: #009688;
+    color: #009688;
+}
 
 .fc-button-group button,
 .fc-today-button{

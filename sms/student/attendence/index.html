@@ -67,11 +67,72 @@
          
 
 <main>
+   
     <div class="container-fluid">
         <div class="row daysection">
-<div class="col m4 s12"><span class="day ">145 days </span>Total</div>
-<div class="col m4 s12"><span class="day">45 days </span>Attended</div>
-<div class="col m4 s12"><span class="day">15 days </span>Missed</div>
+        
+        <div class="col s12 m4">
+        <div class="card grey lighten-4 hoverable">
+        <div class="card-content"><p>
+        <span class="day ">145 days </span>Total
+        </p></div></div></div>    
+        
+        <div class="col s12 m4">
+        <div class="card grey lighten-4 hoverable">
+        <div class="card-content"><p>
+        <span class="day">45 days </span>Attended
+        </p></div></div></div>     
+        
+        <div class="col s12 m4">
+        <div class="card grey lighten-4 hoverable">
+        <div class="card-content"><p>
+        <span class="day">15 days </span>Missed
+        </p></div></div></div>
+       
+        </div>
+        <hr>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row daysection">
+        
+        <div class="col s6 m2">
+        <div class="card deep-purple darken-2 hoverable">
+        <div class="card-content"><div class="subtitle">Subject 1</div><p>
+        <canvas id="subject1" width="200" height="200"></canvas>
+        </p></div></div></div>
+        
+        <div class="col s6 m2">
+        <div class="card deep-purple darken-2 hoverable">
+        <div class="card-content"><div class="subtitle">Subject 2</div><p>
+        <canvas id="subject2" width="200" height="200"></canvas>
+        </p></div></div></div>
+        
+        <div class="col s6 m2">
+        <div class="card deep-purple darken-2 hoverable">
+        <div class="card-content"><div class="subtitle">Subject 3</div><p>
+        <canvas id="subject3" width="200" height="200"></canvas>
+        </p></div></div></div>
+        
+        <div class="col s6 m2">
+        <div class="card deep-purple darken-2 hoverable">
+        <div class="card-content"><div class="subtitle">Subject 4</div><p>
+        <canvas id="subject4" width="200" height="200"></canvas>
+        </p></div></div></div>
+        
+        <div class="col s6 m2">
+        <div class="card deep-purple darken-2 hoverable">
+        <div class="card-content"><div class="subtitle">Subject 5</div><p>
+        <canvas id="subject5" width="200" height="200"></canvas>
+        </p></div></div></div>
+        
+        <div class="col s6 m2">
+        <div class="card deep-purple darken-2 hoverable">
+        <div class="card-content"><div class="subtitle">Subject 6</div><p>
+        <canvas id="subject6" width="200" height="200"></canvas>
+        </p></div></div></div>
+        
+
        
         </div>
         <hr>
@@ -80,7 +141,7 @@
     
     <div class="container-fluid">
     <div class="row">
-    <div class="col m6">
+    <div class="col m12">
         <div class="card grey lighten-4">
             <div class="card-content">
                 <div id='calendar'></div>
@@ -183,12 +244,43 @@
     <script src="../../js/materialize.min.js"></script>
     <script src='../../js/moment.min.js'></script>
     <script src='../../js/fullcalendar.js'></script>
+    <script src="../../js/Chart.min.js"></script>
     
     <script type="text/javascript">
+
+        
+    var doughnutData1 = [{value: 60,color:"#009688"},{value : 40,color : "#fffffd"}];
+	var ctx = document.getElementById("subject1").getContext("2d");
+	window.myDoughnut = new Chart(ctx).Doughnut(doughnutData1, {responsive : true,percentageInnerCutout : 80});
+        
+        var doughnutData2 = [{value: 90,color:"#009688"},{value : 10,color : "#fffffd"}];
+	var ctx = document.getElementById("subject2").getContext("2d");
+	window.myDoughnut = new Chart(ctx).Doughnut(doughnutData2, {responsive : true,percentageInnerCutout : 80});
+        
+        var doughnutData3 = [{value: 20,color:"#009688"},{value : 80,color : "#fffffd"}];
+	var ctx = document.getElementById("subject3").getContext("2d");
+	window.myDoughnut = new Chart(ctx).Doughnut(doughnutData3, {responsive : true,percentageInnerCutout : 80});
+        
+        var doughnutData4 = [{value: 50,color:"#009688"},{value : 50,color : "#fffffd"}];
+	var ctx = document.getElementById("subject4").getContext("2d");
+	window.myDoughnut = new Chart(ctx).Doughnut(doughnutData4, {responsive : true,percentageInnerCutout : 80});
+        
+        var doughnutData5 = [{value: 40,color:"#009688"},{value : 60,color : "#fffffd"}];
+	var ctx = document.getElementById("subject5").getContext("2d");
+	window.myDoughnut = new Chart(ctx).Doughnut(doughnutData5, {responsive : true,percentageInnerCutout : 80});
+        
+        var doughnutData6 = [{value: 80,color:"#009688"},{value :20,color : "#fffffd"}];
+	var ctx = document.getElementById("subject6").getContext("2d");
+	window.myDoughnut = new Chart(ctx).Doughnut(doughnutData6, {responsive : true,percentageInnerCutout : 80});
+			
+        
+        
        $('.button-collapse').sideNav({
       menuWidth: 260, 
       edge: 'left'
     });
+        
+        
 
         
         $(document).ready(function()
@@ -200,12 +292,8 @@
 			
 			var calendar = $('#calendar').fullCalendar(
 			{
-
-				header:
-				{
-					left: 'title',
-					right: 'prev,next today,month,agendaWeek,agendaDay'
-				},
+                
+                header:{left: 'prev',center:'title',right: 'next'},
 
 				defaultView: 'month',
 
@@ -233,8 +321,7 @@
 				},
 
 				editable: false, // Don't allow editing of events
-                handleWindowResize: true,
-                header: false, // Hide buttons/titles
+                handleWindowResize: false,
                 displayEventTime: false,
                 
 
@@ -253,7 +340,7 @@
 						start: new Date(y, m, 3)
 					},{
 						title: 'Y',
-                        color: '#c0392b',
+                        eventColor: '#c0392b',
 						start: new Date(y, m, 4)
 					},{
 						title: 'Y',
@@ -273,7 +360,7 @@
 						start: new Date(y, m, 8)
 					},{
 						title: 'N',
-                        color: '#c0392b',
+                        eventColor: '#c0392b',
 						start: new Date(y, m, 9)
 					},{
 						title: 'N',
