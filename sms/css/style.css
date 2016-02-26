@@ -236,14 +236,28 @@ nav{background-color: #512DA8;}
 
 .noteslist li{
     padding:10px 0px;
-   color: #009688 !important;
+    color: #009688 !important;
 }
+
 
 /*RESULTS PAGE*/
 
 .resulthead{
     padding-top: 30px;
+    color: #009688 !important;
 }
+
+/*PROFILE PAGE*/
+
+.photo1 img{
+    border-radius: 150px;
+    height:150px;
+}
+
+.prodetails{margin: 30px 0px;}
+
+.prodetails h5{margin: 30px 0px;}
+
 
 
 /*footer*/
