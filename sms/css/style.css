@@ -232,7 +232,18 @@ nav{background-color: #512DA8;}
 }
 
 
+/*NOTES PAGE*/
 
+.noteslist li{
+    padding:10px 0px;
+   color: #009688 !important;
+}
+
+/*RESULTS PAGE*/
+
+.resulthead{
+    padding-top: 30px;
+}
 
 
 /*footer*/

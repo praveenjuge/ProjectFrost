@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Notes | Student Management System</title>
+    <title>Results | Student Management System</title>
     
     <link rel="shortcut icon" href="../../favicon.png">
     <link rel="icon" href="../../favicon.png">
@@ -49,13 +49,13 @@
           <a href="../attendence/">
           <li class="side-link"><i class="material-icons">event_available</i>Attendence</li></a>
           
-          <a class="sideactive">
+          <a href="../notes/">
           <li class="side-link"><i class="material-icons">book</i>Notes</li></a>
           
           <a href="../newsevents/">
           <li class="side-link"><i class="material-icons">event</i>News &amp; Events</li></a>
           
-          <a href="../results/">
+          <a class="sideactive">
           <li class="side-link"><i class="material-icons">assignment</i>Results</li></a>
           <a href="../timetable/"><li class="side-link"><i class="material-icons">list</i>Time Table</li></a>
           <a href="#">
@@ -68,9 +68,65 @@
 
 <main>
  
- <div class="container">
+ <div class="container-">
      <div class="row">
-      <div class="input-field col s12">
+     
+        <div class="col m12">
+        <div class="resultable">
+        <h3 class="resulthead">Unit Test Results</h3>
+        <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Select Unit Test Number</option>
+          <option value="1">Unit Test 1</option>
+          <option value="2">Unit Test 2</option>
+          <option value="3">Unit Test 3</option>
+          <option value="4">Unit Test 4</option>
+        </select>
+<!--        <label>Select Semester</label>-->
+      </div>
+        <table class="highlight centered responsive-table bordered">
+        <thead>
+          <tr>
+              <th data-field="id">Subject Name</th>
+              <th data-field="name">Marks</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Subject 1</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Subject 2</td>
+            <td>86</td>
+          </tr>
+          <tr>
+            <td>Subject 3</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Subject 4</td>
+            <td>98</td>
+          </tr>
+          <tr>
+            <td>Subject 5</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Subject 6</td>
+            <td>76</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>  
+     
+     
+      <div class="col m12">
+        <div class="resultable">
+        <h3 class="resulthead">Semester Results</h3>
+        <div class="input-field col s12">
         <select>
           <option value="" disabled selected>Select Semester</option>
           <option value="1">Semester 1</option>
@@ -84,104 +140,45 @@
         </select>
 <!--        <label>Select Semester</label>-->
       </div>
-      
-      
-      <ul class="collapsible" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header">Subject 1</div>
-      <div class="collapsible-body">
-          <ul class="noteslist">
-              <li class="li"><a href="#">Q and A</a></li>
-              <li class="li"><a href="#">16 Marks</a></li>
-              <li class="li"><a href="#">2 Marks</a></li>
-              <li class="li"><a href="#">Question Papers</a></li>
-              <li class="li"><a href="#">Teacher's Notes</a></li>
-          </ul>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">Subject 2</div>
-      <div class="collapsible-body">
-                  <ul class="noteslist">
-              <li class="li"><a href="#">Q and A</a></li>
-              <li class="li"><a href="#">16 Marks</a></li>
-              <li class="li"><a href="#">2 Marks</a></li>
-              <li class="li"><a href="#">Question Papers</a></li>
-              <li class="li"><a href="#">Teacher's Notes</a></li>
-          </ul>
-        </div>
-    </li>
-    <li>
-      <div class="collapsible-header">Subject 3</div>
-      <div class="collapsible-body">
-                    <ul class="noteslist">
-              <li class="li"><a href="#">Q and A</a></li>
-              <li class="li"><a href="#">16 Marks</a></li>
-              <li class="li"><a href="#">2 Marks</a></li>
-              <li class="li"><a href="#">Question Papers</a></li>
-              <li class="li"><a href="#">Teacher's Notes</a></li>
-          </ul>
-          
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">Subject 4</div>
-      <div class="collapsible-body">
-          
-                    <ul class="noteslist">
-              <li class="li"><a href="#">Q and A</a></li>
-              <li class="li"><a href="#">16 Marks</a></li>
-              <li class="li"><a href="#">2 Marks</a></li>
-              <li class="li"><a href="#">Question Papers</a></li>
-              <li class="li"><a href="#">Teacher's Notes</a></li>
-          </ul>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">Subject 5</div>
-      <div class="collapsible-body">
-          
-                    <ul class="noteslist">
-              <li class="li"><a href="#">Q and A</a></li>
-              <li class="li"><a href="#">16 Marks</a></li>
-              <li class="li"><a href="#">2 Marks</a></li>
-              <li class="li"><a href="#">Question Papers</a></li>
-              <li class="li"><a href="#">Teacher's Notes</a></li>
-          </ul>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">Subject 6</div>
-      <div class="collapsible-body">
-                    <ul class="noteslist">
-              <li class="li"><a href="#">Q and A</a></li>
-              <li class="li"><a href="#">16 Marks</a></li>
-              <li class="li"><a href="#">2 Marks</a></li>
-              <li class="li"><a href="#">Question Papers</a></li>
-              <li class="li"><a href="#">Teacher's Notes</a></li>
-          </ul>
-      </div>
-    </li>
+        <table class="highlight centered responsive-table bordered">
+        <thead>
+          <tr>
+              <th data-field="id">Subject Name</th>
+              <th data-field="name">Grade</th>
+          </tr>
+        </thead>
 
-  </ul>
-      
-      
-      
-      
+        <tbody>
+          <tr>
+            <td>Subject 1</td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td>Subject 2</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Subject 3</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>Subject 4</td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td>Subject 5</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Subject 6</td>
+            <td>B</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>  
      </div>
  </div>
-  
-  
-        
-<!--
-   
-   <div class="collection">
-        <a href="#!" class="collection-item">Alvin</a>
-        <a href="#!" class="collection-item active">Alvin</a>
-        <a href="#!" class="collection-item">Alvin</a>
-        <a href="#!" class="collection-item">Alvin</a>
-      </div>
--->
     
 </main>
 
@@ -226,11 +223,6 @@
         $(document).ready(function() {
     $('select').material_select();
   });
-        
-        
-        
-
-        
       </script>
   </body>
 </html>

@@ -125,7 +125,7 @@
         var chart3 = nv.models.pieChart()
             .x(function(d) { return d.key })
             .y(function(d) { return d.y })
-            .showLegend(false)     
+            .showLegend(true)     
             .donut(true)
             .padAngle(0)
             .cornerRadius(0)
