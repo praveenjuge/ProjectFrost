@@ -72,9 +72,9 @@ main, footer {padding-left: 260px;}
 
 .box hr{width: 80px; border-top: 2px solid #eeeeee;}
 
-form {padding: 28% 1%; margin: auto;}
+.logobg form {padding: 28% 1%; margin: auto;}
 
-form li{
+.logobg form li{
     margin: auto;
 	border:none;
 	list-style:none;
@@ -83,7 +83,7 @@ form li{
     background-color: #eeeeee;
 }
 
-input[type="text"], input[type="password"] {margin: auto; text-indent: 20px; color: black;}
+.logobg input[type="text"],.logobg input[type="password"] {margin: auto; text-indent: 20px; color: black;}
 
 .submit {margin-bottom:50px; width:70%;}
 
@@ -245,6 +245,11 @@ nav{background-color: #512DA8;}
 .resulthead{
     padding-top: 30px;
     color: #009688 !important;
+}
+
+table{
+    margin: 40px 0px;
+    
 }
 
 /*PROFILE PAGE*/
