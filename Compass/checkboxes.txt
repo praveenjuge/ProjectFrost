@@ -1,0 +1,29 @@
+~Log in - Welcome~
+
+~STUDENT~
+~Home~
+~Attendence~
+~Notes~
+~News & Events~
+~Results~
+~Time Table~
+~Placement News~
+~Your Profile~
+
+~STAFF~
+~Home~
+~Attendence~
+~Notes~
+~News & Events~
+~Results~
+~Time Table~
+~Placement News~
+~Your Profile~
+
+~CLASS ADVISOR~
+~Attendence~
+
+~HOD~
+~News & Events~
+~Placement News~
+~Settings~

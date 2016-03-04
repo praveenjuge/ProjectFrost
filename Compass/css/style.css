@@ -231,6 +231,18 @@ nav{background-color: #512DA8;}
     background-color: #009688 !important;
 }
 
+/*NEWS & EVENTS*/
+
+.newspage .date{
+    text-align: center;
+}
+.newspage .newstitle{
+    text-align: center;
+}
+.newspage .notfibox{
+    text-align: center;
+    padding-top: 20px;
+}
 
 /*NOTES PAGE*/
 

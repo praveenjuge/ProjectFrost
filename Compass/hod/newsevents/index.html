@@ -40,7 +40,7 @@
           <div class="photo" >
           <img alt="My Photo" src="../../images/fr-09.jpg"/>
           </div>
-          <div class="info">Praveen Juge - IT - AP</div>
+          <div class="info">Praveen Juge - IT - HOD</div>
           </div>
           
           <a href="../" >
@@ -70,10 +70,29 @@
  
  <div class="container">
      <div class="row">
+      
+        <div class="col m12">
+           <div class="card grey lighten-4">
+            <div class="card-content newspage">
+              <span class="card-title">Add New Event</span>
+              
+              <form>
+                  <input data-value="Select Date" type="date" class="datepicker">
+                  
+                      <div class="input-field">
+                        <input id="input_text" type="text" length="100">
+                        <label for="input_text">Input Event Name</label>
+                      </div>
+
+                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+                  </form>
+                  
+              
+               </div></div></div>
 
       <div class="col m12">
            <div class="card grey lighten-4">
-            <div class="card-content ">
+            <div class="card-content newspage">
                 <span class="card-title">Recent News &amp; Events</span>
                        
                 <div class="notfibox">
@@ -211,7 +230,7 @@
     $('select').material_select();
   });
         
-        
+        $('.datepicker').pickadate();
         
 
         
