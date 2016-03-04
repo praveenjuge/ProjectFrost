@@ -225,7 +225,7 @@ nav{background-color: #512DA8;}
 
 .fc-event{
     text-align: center;
-    padding: 3px 0px;
+/*    padding: 3px 0px;*/
     border: none;
     border-radius: 0px;
     background-color: #009688 !important;
@@ -247,10 +247,10 @@ nav{background-color: #512DA8;}
     color: #009688 !important;
 }
 
-table{
-    margin: 40px 0px;
-    
-}
+.dataTables_wrapper .dataTables_length {
+    display: none;}
+
+
 
 /*PROFILE PAGE*/
 
