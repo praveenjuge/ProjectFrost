@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="../favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Add New Site - Fews Analytics</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="twitter:site" content="@praveenjuge">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/mystyle.css" rel="stylesheet"/>
+    <link href="../css/demo.css" rel="stylesheet" />
+    <link href="../css/chartist.min.css" rel="stylesheet" />
+    
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../fonts/stylesheet.min.css" rel="stylesheet">
+
+    <link href="../css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="green">
+
+        <div class="logo">
+            <a href="#" class="logo-text">FEWS Analytics</a>
+        </div>
+
+    	<div class="sidebar-wrapper">
+            <div class="user">
+                <div class="photo">
+                    <img src="../img/profile.jpg" />
+                </div>
+                <div class="info">
+                    <a data-toggle="collapse" href="#collapseExample" class="collapsed">Praveen Juge
+                        <b class="caret"></b>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                        <ul class="nav">
+                            <li><a href="../settings/">View/Edit Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav">
+                <li >
+                    <a href="../home/">
+                        <i class="pe-7s-graph1"></i>
+                        <p>Overview</p>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="#">
+                        <i class="pe-7s-plus"></i>
+                        <p>Add New Site</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="pe-7s-share"></i>
+                        <p>Explore other Sites</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../settings/">
+                        <i class="pe-7s-settings"></i>
+                        <p>Settings</p>
+                    </a>
+                </li>
+
+
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default">
+    		<div class="container-fluid">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand" href="#">Add New Website </a>
+    			</div>
+    			<div class="collapse navbar-collapse">
+
+    				<ul class="nav navbar-nav navbar-right">
+                        
+                    <form class="navbar-form navbar-left navbar-search-form" role="search">
+    					<div class="input-group">
+    						<span class="input-group-addon"><i class="fa fa-search"></i></span>
+    						<input type="text" value="" class="form-control" placeholder="Search...">
+    					</div>
+    				</form>
+
+    					<li class="dropdown">
+    						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    							<i class="fa fa-bell-o"></i>
+    							<span class="notification">1</span>
+    							<p class="hidden-md hidden-lg">
+    								Notifications
+    								<b class="caret"></b>
+    							</p>
+    						</a>
+    						<ul class="dropdown-menu">
+    							<li><a href="#">Notification 1</a></li>
+    							<li><a href="#">Notification 2</a></li>
+    							<li><a href="#">Notification 3</a></li>
+    							<li><a href="#">Notification 4</a></li>
+    							<li><a href="#">Another notification</a></li>
+    						</ul>
+    					</li>
+
+    					<li class="dropdown dropdown-with-icons">
+    						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    							<i class="fa fa-cog"></i>
+    							<p class="hidden-md hidden-lg">
+    								More
+    								<b class="caret"></b>
+    							</p>
+    						</a>
+    						<ul class="dropdown-menu dropdown-with-icons">
+    							<li>
+    								<a href="#">
+    									<i class="pe-7s-mail"></i> Messages
+    								</a>
+    							</li>
+    							<li>
+    								<a href="#">
+    									<i class="pe-7s-help1"></i> Help Center
+    								</a>
+    							</li>
+    							<li>
+    								<a href="#">
+    									<i class="pe-7s-tools"></i> Settings
+    								</a>
+    							</li>
+    							<li class="divider"></li>
+    							<li>
+    								<a href="#">
+    									<i class="pe-7s-lock"></i> Lock Screen
+    								</a>
+    							</li>
+    							<li>
+    								<a href="#" class="text-danger">
+    									<i class="pe-7s-close-circle"></i>
+    									Log out
+    								</a>
+    							</li>
+    						</ul>
+    					</li>
+
+    				</ul>
+    			</div>
+    		</div>
+    	</nav>
+
+      
+      
+       <div class="content addsite">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="card card-wizard" id="wizardCard">
+                            <form id="wizardForm" method="" action="#">
+            				
+            				<div class="content">
+            				    <ul class="nav">
+            						<li><a href="index.htm#tab1" data-toggle="tab">Step 1</a></li>
+            						<li><a href="index.htm#tab2" data-toggle="tab">Step 2</a></li>
+            						<li><a href="index.htm#tab3" data-toggle="tab">Step 3</a></li>
+            					</ul>
+            					
+            					<div class="tab-content">
+            					    <div class="tab-pane" id="tab1">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+<label class="control-label">Website Name<star>*</star></label>
+<input class="form-control" type="text" name="web_name" placeholder="ex: Booze Up Events"/>
+                                                </div> 
+                                            </div>
+
+                                        </div>
+            					    </div>
+            					    
+            					    <div class="tab-pane" id="tab2">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="form-group">
+                                                    <label class="control-label">Your Website Url<star>*</star></label>
+                                                    <input class="form-control" 
+                                                           type="text" 
+                                                           name="website" 
+                                                           url="true"
+                                                           placeholder="ex: http://www.henceforth.in"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="form-group">
+                                                    <label class="control-label">FEWS Version</label>
+                                                     
+                                                    <select name="cities" class="form-control">
+                                                        <option selected="" disabled="">- version -</option>       
+                                                        <option value="1.1">Free</option>
+                                                        <option value="2.0">Pro</option>                                             
+                                                    </select>
+                                                    
+                                                </div>
+                                            </div>                                         
+                                        </div>
+                                        
+            					    </div>
+            					    
+            						<div class="tab-pane" id="tab3">
+            							<h2 class="text-center text-space">Copy this Code into your Website, then click finish.<br><br><small><pre>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</pre></small></h2>
+            					    </div>
+            						
+            					</div>
+            				</div>
+            				
+            				<div class="footer">
+                                <button type="button" class="btn btn-default btn-fill btn-wd btn-back pull-left">Back</button>
+                                
+                                <button type="button" class="btn btn-info btn-fill btn-wd btn-next pull-right">Next</button>
+                                <button type="button" class="btn btn-info btn-fill btn-wd btn-finish pull-right" onclick="onFinishWizard()">Finish</button>            
+                                
+                                <div class="clearfix"></div>
+            				</div>
+                            </form>
+
+                        </div>                        
+                    </div>
+                </div> 
+                    
+            </div>
+        </div>
+      
+
+
+
+    </div>
+</div>
+
+
+
+
+
+</body>
+    
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script> 
+	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="../js/moment.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.js"></script>
+    <script src="../js/bootstrap-selectpicker.js"></script>
+	<script src="../js/bootstrap-checkbox-radio-switch-tags.js"></script>
+	<script src="../js/chartist.min.js"></script>
+    <script src="../js/bootstrap-notify.js"></script>
+	<script src="../js/sweetalert2.js"></script>
+	<script src="../js/jquery-jvectormap.js"></script>
+    <script src="../js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="../js/bootstrap-table.js"></script>
+    <script src="../js/fullcalendar.min.js"></script>
+	<script src="../js/myjs.js"></script>
+    <script src="../js/jquery.sharrre.js"></script>
+	<script src="../js/demo.js"></script>
+	
+	
+    <script type="text/javascript">
+        $().ready(function(){
+            
+            var $validator = $("#wizardForm").validate({
+    		  rules: {
+    		    web_name: {
+    		        required: true,
+                    minlength: 5
+    		    },
+    		    website: {
+    		        required: true,
+                    minlength: 5,
+                    url: true
+    		    }
+    		  }
+    		});
+    
+     
+            
+            // you can also use the nav-pills-[blue | azure | green | orange | red] for a different color of wizard
+            
+            $('#wizardCard').bootstrapWizard({
+            	tabClass: 'nav nav-pills nav-pills-green',            	
+            	nextSelector: '.btn-next',
+                previousSelector: '.btn-back',
+            	onNext: function(tab, navigation, index) {
+            		var $valid = $('#wizardForm').valid();
+    
+            		if(!$valid) {
+            			$validator.focusInvalid();
+            			return false;
+            		}
+            	},         
+                onInit : function(tab, navigation, index){
+                
+                    //check number of tabs and fill the entire row
+                    var $total = navigation.find('li').length;
+                    $width = 100/$total;
+                    
+                    $display_width = $(document).width();
+                    
+                    if($display_width < 600 && $total > 3){
+                       $width = 50;
+                    }
+                    
+                    navigation.find('li').css('width',$width + '%');                
+                },
+                onTabClick : function(tab, navigation, index){
+                    // Disable the posibility to click on tabs
+                    return false;
+                },
+                onTabShow: function(tab, navigation, index) {
+                    var $total = navigation.find('li').length;
+                    var $current = index+1;
+                    
+                    var wizard = navigation.closest('.card-wizard');
+                    
+                    // If it's the last tab then hide the last button and show the finish instead
+                    if($current >= $total) {
+                        $(wizard).find('.btn-next').hide();
+                        $(wizard).find('.btn-finish').show();
+                    } else if($current == 1){
+                        $(wizard).find('.btn-back').hide();
+                    } else {
+                        $(wizard).find('.btn-back').show();
+                        $(wizard).find('.btn-next').show();
+                        $(wizard).find('.btn-finish').hide();
+                    }
+                }
+                
+            });
+            
+        }); 
+        
+        function onFinishWizard(){
+            
+            swal("Verified!", "You Website has been Verified!", "success");
+        }   
+    </script>
+
+</html>
