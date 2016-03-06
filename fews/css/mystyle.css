@@ -8151,3 +8151,14 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
     color: #fff !important;
     fill: #fff !important;
 }
+
+/*BROWSER OS*/
+
+.bigtable{
+    font-size: 20px;
+    text-align: center !important;
+}
+
+.bigtable > thead > tr > th{
+    text-align: center !important;
+}

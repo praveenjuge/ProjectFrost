@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="../../favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Browser/OS - henceforth.in - Fews Analytics</title>
+	<title>Locations - henceforth.in - Fews Analytics</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -77,8 +77,8 @@
                     </a>
                 </li>
                 
-                <li>
-                    <a href="../locations/">
+                <li  class="active">
+                    <a href="#">
                         <i class="pe-7s-map"></i>
                         <p>Locations</p>
                     </a>
@@ -86,8 +86,8 @@
                            
                 
                   
-                   <li class="active">
-                    <a href="#">
+                   <li>
+                    <a href="../browser-os/">
                         <i class="pe-7s-monitor"></i>
                         <p>Browsers and OS</p>
                     </a>
@@ -108,7 +108,7 @@
     					<span class="icon-bar"></span>
     					<span class="icon-bar"></span>
     				</button>
-    				<a class="navbar-brand" href="#">Browsers and OS</a>
+    				<a class="navbar-brand" href="#">Locations</a>
     			</div>
     			<div class="collapse navbar-collapse">
 
@@ -186,8 +186,20 @@
         <div class="content">
             <div class="container-fluid">
 
-            <div class="row">
-               <div class="col-md-6">
+                 <div class="row">                   
+                    <div class="col-md-12">
+                        <h3 class="text-center">
+                            Global Visits<br />
+                        </h3>
+                        <div class="card card-plain">
+                            <div class="content">
+                                <div id="worldMap" class="map map-big"></div>
+                            </div>
+                        </div>            
+                    </div>   
+                    
+                                     
+                    <div class="col-md-8 col-md-offset-2">
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Operating System</h4>
@@ -195,51 +207,24 @@
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover table-striped bigtable">
-<thead><tr class="tableizer-firstrow"><th>OPERATING SYSTEM </th><th>UNIQUE VISITORS</th></tr></thead><tbody>
- <tr><td>Windows 7</td><td>74</td></tr>
- <tr><td>Windows 10</td><td>72</td></tr>
- <tr><td>Mac 10.11</td><td>56</td></tr>
- <tr><td>GNU/Linux</td><td>29</td></tr>
- <tr><td>Windows 8.1</td><td>27</td></tr>
- <tr><td>Ubuntu</td><td>22</td></tr>
- <tr><td>Mac 10.10</td><td>10</td></tr>
- <tr><td>Windows 8</td><td>7</td></tr>
- <tr><td>Android 4.4</td><td>5</td></tr>
- <tr><td>iOS 9.2</td><td>5</td></tr>
+<thead><tr class="tableizer-firstrow"><th>COUNTRY</th><th>UNIQUE VISITORS</th></tr></thead><tbody>
+ <tr><td>Germany</td><td>70</td></tr>
+ <tr><td>United States</td><td>42</td></tr>
+ <tr><td>India</td><td>19</td></tr>
+ <tr><td>France</td><td>16</td></tr>
+ <tr><td>Poland</td><td>15</td></tr>
+ <tr><td>Italy</td><td>12</td></tr>
+ <tr><td>Netherlands</td><td>12</td></tr>
+ <tr><td>Russia</td><td>10</td></tr>
+ <tr><td>United Kingdom</td><td>9</td></tr>
+ <tr><td>Canada</td><td>8</td></tr>
 </tbody></table>
                                    
                             </div>
                         </div>
-                    </div>  
-          
-          
-                         <div class="col-md-6">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Browsers</h4>
-                                <p class="category">List of all the Browsers that accessed the Site</p>
-                            </div>
-                            <div class="content table-responsive table-full-width">
-                                <table class="table table-hover table-striped bigtable">
-<thead><tr class="tableizer-firstrow"><th>BROWSER</th><th>UNIQUE VISITORS</th></tr></thead><tbody>
- <tr><td>Chrome</td><td>166</td></tr>
- <tr><td>Firefox</td><td>89</td></tr>
- <tr><td>Safari</td><td>27</td></tr>
- <tr><td>Chrome Mobile</td><td>12</td></tr>
- <tr><td>Opera</td><td>10</td></tr>
- <tr><td>Internet Explorer</td><td>8</td></tr>
- <tr><td>Mobile Safari</td><td>7</td></tr>
- <tr><td>Chromium</td><td>5</td></tr>
- <tr><td>Microsoft Edge</td><td>4</td></tr>
- <tr><td>Android Browser</td><td>1</td></tr>
-</tbody></table>
-                                   
-                            </div>
-                        </div>
-                    </div>  
-          
-            </div>
-
+                    </div>                   
+                </div>
+           
             </div>
         </div>
 
@@ -271,5 +256,46 @@
     <script src="../../js/fullcalendar.min.js"></script>
 	<script src="../../js/myjs.js"></script>
     <script src="../../js/jquery.sharrre.js"></script>
+    	<script type="text/javascript">
+        
+        var mapData = {
+                "AU": 760,
+                "BR": 550,
+                "CA": 120,
+                "DE": 1300,
+                "FR": 540,
+                "GB": 690,
+                "GE": 200,
+                "IN": 200,
+                "RO": 600,
+                "RU": 300,
+                "US": 2920,
+            };
+
+            $('#worldMap').vectorMap({
+                map: 'world_mill_en',
+                backgroundColor: "transparent",
+                zoomOnScroll: false,
+                regionStyle: {
+                    initial: {
+                        fill: '#e4e4e4',
+                        "fill-opacity": 0.9,
+                        stroke: 'none',
+                        "stroke-width": 0,
+                        "stroke-opacity": 0
+                    }
+                },
+
+
+                series: {
+                    regions: [{
+                        values: mapData,
+                        scale: ["#AAAAAA","#444444"],
+                        normalizeFunction: 'polynomial'
+                    }]
+                }
+            });
+        
+    </script>
 
 </html>
