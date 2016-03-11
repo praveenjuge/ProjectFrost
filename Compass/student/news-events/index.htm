@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>News and Events | Compass</title>
+		
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="@praveenjuge">
+
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="shortcut icon" href="../../favicon.png" type="img/x-icon">
+
+<!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,900,700' rel='stylesheet' type='text/css'>-->
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="../../css/mystyle.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<link type="text/css" rel="stylesheet" href="../../css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="../../css/iconic-font.min.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/rickshaw/rickshaw.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/morris/morris.core.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/fullcalendar/fullcalendar.css" />
+
+<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+
+</head>
+
+<body class="menubar-hoverable menubar-pin menubar-first ">
+
+
+<header id="header" >	
+<div class="headerbar">
+	<div class="headerbar-left">
+		<ul class="header-nav header-nav-options">
+			<li class="header-nav-brand" >
+				<div class="brand-holder">
+					<a href="#">
+						<span class="text-lg text-bold text-primary">COMPASS</span>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+					<i class="fa fa-bars"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="headerbar-right">
+		<ul class="header-nav header-nav-options">
+			<li>
+				<form class="navbar-search" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" name="headerSearch" placeholder="Enter your Search Term">
+					</div>
+					<button type="submit" class="btn btn-icon-toggle ink-reaction"><i class="fa fa-search"></i></button>
+				</form>
+			</li>
+			<li class="dropdown hidden-xs">
+				<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown">
+					<i class="fa fa-bell"></i><sup class="badge style-danger">4</sup>
+				</a>
+				<ul class="dropdown-menu animation-expand">
+					<li class="dropdown-header">Recent Notifications</li>
+					<li>
+						<a class="alert alert-callout alert-warning" href="javascript:void(0);">
+							<strong>New Time Table Announced.</strong><br/>
+						</a>
+					</li>
+					<li>
+						<a class="alert alert-callout alert-info" href="javascript:void(0);">
+							<strong>National Conference on Application of Nanotechnology</strong><br/>
+						</a>
+					</li>
+					<li>
+						<a class="alert alert-callout alert-info" href="javascript:void(0);">
+							<strong>National Conference on Information and Intelligent Technologies NCIIT'16</strong><br/>
+						</a>
+					</li>
+					<li>
+						<a class="alert alert-callout alert-info" href="javascript:void(0);">
+							<strong>One Day Hands-on Training on Automotive Component Design</strong><br/>
+						</a>
+					</li>
+					<li><a href="#">View all Notifications <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+				</ul>
+			</li>
+    </ul>
+		<ul class="header-nav header-nav-profile">
+			<li class="dropdown">
+				<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+					<img src="../../images/avatar.jpg" alt="" />
+					<span class="profile-info">
+						Praveen Juge
+						<small>Student</small>
+					</span>
+				</a>
+				<ul class="dropdown-menu animation-dock">
+					<li><a href="../profile/">My profile</a></li>
+					<li><a href="#">My calendar</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="fa fa-fw fa-lock"></i> Lock</a></li>
+					<li><a href="#"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+			</header>
+
+<div id="base">
+    
+<div id="menubar" class="menubar-inverse ">
+			<div class="menubar-fixed-panel">
+				<div>
+					<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>
+				<div class="expanded">
+					<a href="#">
+						<span class="text-lg text-bold text-primary ">COMPASS</span>
+					</a>
+				</div>
+			</div>
+			<div class="menubar-scroll-panel">
+				
+
+<ul id="main-menu" class="gui-controls">
+	<li>
+		<a href="../" >
+			<div class="gui-icon"><i class="md md-home"></i></div>
+			<span class="title">Home</span>
+		</a>
+	</li>
+    
+	<li>
+		<a href="../attendence/">
+			<div class="gui-icon"><i class="md md-event"></i></div>
+			<span class="title">Attendence</span>
+		</a>
+    </li>
+    
+	<li>
+		<a href="../notes/" >
+			<div class="gui-icon"><i class="md md-book"></i></div>
+			<span class="title">Notes</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../news-events/"  class="active">
+			<div class="gui-icon"><i class="md md-event"></i></div>
+			<span class="title">News &amp; Events</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../results/" >
+			<div class="gui-icon"><i class="md md-assignment"></i></div>
+			<span class="title">Results</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../timetable/" >
+			<div class="gui-icon"><i class="md md-list"></i></div>
+			<span class="title">Time Table</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../placement/" >
+			<div class="gui-icon"><i class="md md-layers"></i></div>
+			<span class="title">Placement News</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../profile/" >
+			<div class="gui-icon"><i class="md md-account-circle"></i></div>
+			<span class="title">Your Profile</span>
+		</a>
+	</li>
+    
+
+</ul>
+
+			</div>
+		</div>
+	
+		
+
+<div id="content">
+			
+<section>
+
+		<div class="section-body">
+			<div class="container">
+				<h2 class="text-light text-center">Latest News and Events</h2>
+				<br/>
+				<ul class="timeline collapse-lg timeline-hairline">
+				
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</span></span><br/>
+									<span class="opacity-50">
+										Monday, March 3, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Application of Nanotechnology - B.E. Civil Dept.</span></span><br/>
+									<span class="opacity-50">
+										Saturday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Application of Nanotechnology - B.E. Civil Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+                <button type="button" class="btn btn-block ink-reaction btn-raised btn-primary">View More</button>
+			</div>
+		</div>
+	</section>
+
+		</div>
+		
+
+</div>
+
+		
+<script src="../../js/libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="../../js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script src="../../js/libs/bootstrap/bootstrap.min.js"></script>
+<script src="../../js/libs/spin.js/spin.min.js"></script>
+<script src="../../js/libs/autosize/jquery.autosize.min.js"></script>
+<script src="../../js/libs/moment/moment.min.js"></script>
+<script src="../../js/1.js"></script>
+<script src="../../js/2.js"></script>
+<script src="../../js/3.js"></script>
+<script src="../../js/libs/jquery-knob/jquery.knob.min.js"></script>
+<script src="../../js/libs/sparkline/jquery.sparkline.min.js"></script>
+<script src="../../js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+<script src="../../js/libs/fullcalendar/fullcalendar.min.js"></script>
+<script src="../../js/libs/rickshaw/rickshaw.min.js"></script>
+
+
+<script src="../../js/d/d.js"></script>
+<script src="../../js/d/dCalendar.js"></script>
+<!--<script src="../assets/js/modules/materialadmin/core/demo/DemoDashboard.js"></script>-->
+
+
+</body></html>

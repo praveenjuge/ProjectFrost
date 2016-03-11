@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Results | Compass</title>
+		
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="@praveenjuge">
+
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="shortcut icon" href="../../favicon.png" type="img/x-icon">
+
+<!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,900,700' rel='stylesheet' type='text/css'>-->
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="../../css/mystyle.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<link type="text/css" rel="stylesheet" href="../../css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="../../css/iconic-font.min.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/rickshaw/rickshaw.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/morris/morris.core.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/fullcalendar/fullcalendar.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/DataTables/jquery.dataTables.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/DataTables/extensions/dataTables.colVis.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/DataTables/extensions/dataTables.tableTools.css" />
+
+<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+
+</head>
+
+<body class="menubar-hoverable menubar-pin menubar-first ">
+
+
+<header id="header" >	
+<div class="headerbar">
+	<div class="headerbar-left">
+		<ul class="header-nav header-nav-options">
+			<li class="header-nav-brand" >
+				<div class="brand-holder">
+					<a href="#">
+						<span class="text-lg text-bold text-primary">COMPASS</span>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+					<i class="fa fa-bars"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="headerbar-right">
+		<ul class="header-nav header-nav-options">
+			<li>
+				<form class="navbar-search" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" name="headerSearch" placeholder="Enter your Search Term">
+					</div>
+					<button type="submit" class="btn btn-icon-toggle ink-reaction"><i class="fa fa-search"></i></button>
+				</form>
+			</li>
+			<li class="dropdown hidden-xs">
+				<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown">
+					<i class="fa fa-bell"></i><sup class="badge style-danger">4</sup>
+				</a>
+				<ul class="dropdown-menu animation-expand">
+					<li class="dropdown-header">Recent Notifications</li>
+					<li>
+						<a class="alert alert-callout alert-warning" href="javascript:void(0);">
+							<strong>New Time Table Announced.</strong><br/>
+						</a>
+					</li>
+					<li>
+						<a class="alert alert-callout alert-info" href="javascript:void(0);">
+							<strong>National Conference on Application of Nanotechnology</strong><br/>
+						</a>
+					</li>
+					<li>
+						<a class="alert alert-callout alert-info" href="javascript:void(0);">
+							<strong>National Conference on Information and Intelligent Technologies NCIIT'16</strong><br/>
+						</a>
+					</li>
+					<li>
+						<a class="alert alert-callout alert-info" href="javascript:void(0);">
+							<strong>One Day Hands-on Training on Automotive Component Design</strong><br/>
+						</a>
+					</li>
+					<li><a href="#">View all Notifications <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+				</ul>
+			</li>
+    </ul>
+		<ul class="header-nav header-nav-profile">
+			<li class="dropdown">
+				<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+					<img src="../../images/avatar.jpg" alt="" />
+					<span class="profile-info">
+						Praveen Juge
+						<small>Admin</small>
+					</span>
+				</a>
+				<ul class="dropdown-menu animation-dock">
+					<li><a href="../profile/">My profile</a></li>
+					<li><a href="#">My calendar</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="fa fa-fw fa-lock"></i> Lock</a></li>
+					<li><a href="#"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+			</header>
+
+<div id="base">
+    
+<div id="menubar" class="menubar-inverse ">
+			<div class="menubar-fixed-panel">
+				<div>
+					<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>
+				<div class="expanded">
+					<a href="#">
+						<span class="text-lg text-bold text-primary ">COMPASS</span>
+					</a>
+				</div>
+			</div>
+			<div class="menubar-scroll-panel">
+				
+
+<ul id="main-menu" class="gui-controls">
+	<li>
+		<a href="../" >
+			<div class="gui-icon"><i class="md md-home"></i></div>
+			<span class="title">Home</span>
+		</a>
+	</li>
+    
+	<li>
+		<a href="../attendence/">
+			<div class="gui-icon"><i class="md md-event"></i></div>
+			<span class="title">Attendence</span>
+		</a>
+    </li>
+    
+	<li>
+		<a href="../notes/" >
+			<div class="gui-icon"><i class="md md-book"></i></div>
+			<span class="title">Notes</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../news-events/" >
+			<div class="gui-icon"><i class="md md-event"></i></div>
+			<span class="title">News &amp; Events</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../results/" class="active" >
+			<div class="gui-icon"><i class="md md-assignment"></i></div>
+			<span class="title">Results</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../timetable/" >
+			<div class="gui-icon"><i class="md md-list"></i></div>
+			<span class="title">Time Table</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../placement/" >
+			<div class="gui-icon"><i class="md md-layers"></i></div>
+			<span class="title">Placement News</span>
+		</a>
+	</li>    
+	<li>
+		<a href="../profile/" >
+			<div class="gui-icon"><i class="md md-account-circle"></i></div>
+			<span class="title">Your Profile</span>
+		</a>
+	</li>
+    
+
+</ul>
+
+			</div>
+		</div>
+	
+		
+<div id="content">
+    <section>
+
+    <div class="section-body contain-lg">
+			<div class="row">
+			<div class="col-md-12">
+					<div class="card">
+						<div class="card-body">
+							<form class="form" role="form">
+								<div class="form-group floating-label">
+									<select id="select2" name="select2" class="form-control">
+										<option value="">&nbsp;</option>
+										<option value="1">IT - III Year</option>
+          <option value="2">Mech - II Year</option>
+          <option value="3">MBA - I Year</option>
+          <option value="4">IT - IV Year</option>
+									</select>
+									<label for="select2">Select Class </label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<h1 class="text-primary">Unit Test Results</h1>
+				</div>
+				<div class="col-lg-8">
+					<article class="margin-bottom-xxl">
+						<p class="lead">
+						</p>
+					</article>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-md-12">
+					<div class="card">
+						<div class="card-body">
+							<form class="form" role="form">
+								<div class="form-group floating-label">
+									<select id="select2" name="select2" class="form-control">
+										<option value="">&nbsp;</option>
+										<option value="1">Unit Test 1</option>
+                                          <option value="2">Unit Test 2</option>
+                                          <option value="3">Unit Test 3</option>
+                                          <option value="4">Unit Test 4</option>
+									</select>
+									<label for="select2">Select Unit Test</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-12">
+					<div class="table-responsive">
+						<table id="datatable1" class="table table-striped table-hover">
+
+<thead><tr><th>S.No</th><th>Name</th><th>DPSD</th><th>OOPS</th><th>DIGITAL LAB</th><th>OOPS LAB</th><th>EVS</th><th>DSA</th><th>POC</th><th>DSA LAB</th><th>TPDE</th></tr></thead><tbody>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>CS2202</td><td>CS2203</td><td>CS2207</td><td>CS2209</td><td>GE2021</td><td>IT2201</td><td>IT2202</td><td>IT2205</td><td>MA2211</td></tr>
+ <tr><td>1</td><td>ABINAYA V</td><td>U</td><td>D</td><td>C</td><td>C</td><td>U</td><td>U</td><td>U</td><td>U</td><td>D</td></tr>
+ <tr><td>2</td><td>AJAY KUMAR R</td><td>U</td><td>E</td><td>A</td><td>A</td><td>U</td><td>U</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>3</td><td>AKASH B</td><td>U</td><td>E</td><td>B</td><td>B</td><td>U</td><td>U</td><td>U</td><td>B</td><td>A</td></tr>
+ <tr><td>4</td><td>AMALA JINU R</td><td>E</td><td>D</td><td>S</td><td>B</td><td>D</td><td>D</td><td>U</td><td>B</td><td>S</td></tr>
+ <tr><td>5</td><td>ARUN KUMAR S</td><td>E</td><td>U</td><td>C</td><td>C</td><td>U</td><td>E</td><td>U</td><td>B</td><td>C</td></tr>
+ <tr><td>6</td><td>ASHWATH D</td><td>U</td><td>U</td><td>C</td><td>C</td><td>U</td><td>U</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>7</td><td>ASHWINI S</td><td>E</td><td>B</td><td>S</td><td>B</td><td>U</td><td>D</td><td>U</td><td>A</td><td>S</td></tr>
+ <tr><td>8</td><td>CHRISTAL RANI P P</td><td>U</td><td>A</td><td>A</td><td>C</td><td>U</td><td>E</td><td>U</td><td>A</td><td>S</td></tr>
+ <tr><td>9</td><td>DEEPIKA G N</td><td>D</td><td>A</td><td>B</td><td>S</td><td>U</td><td>D</td><td>E</td><td>S</td><td>S</td></tr>
+ <tr><td>10</td><td>DEVA PRIYA M</td><td>U</td><td>C</td><td>C</td><td>C</td><td>U</td><td>C</td><td>E</td><td>B</td><td>B</td></tr>
+ <tr><td>12</td><td>DINESH R</td><td>U</td><td>U</td><td>B</td><td>E</td><td>E</td><td>E</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>13</td><td>DIVYA R</td><td>U</td><td>D</td><td>B</td><td>S</td><td>D</td><td>E</td><td>U</td><td>S</td><td>S</td></tr>
+ <tr><td>14</td><td>ESWARI S</td><td>U</td><td>E</td><td>C</td><td>B</td><td>E</td><td>E</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>15</td><td>GIRIDHARAN C</td><td>U</td><td>E</td><td>B</td><td>A</td><td>E</td><td>D</td><td>E</td><td>S</td><td>C</td></tr>
+ <tr><td>16</td><td>GOMATHI S</td><td>U</td><td>E</td><td>S</td><td>S</td><td>C</td><td>C</td><td>U</td><td>S</td><td>A</td></tr>
+ <tr><td>17</td><td>HIMALAYAN RAM P</td><td>U</td><td>U</td><td>D</td><td>E</td><td>E</td><td>E</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>18</td><td>JUGE PRAVEEN R</td><td>U</td><td>B</td><td>S</td><td>S</td><td>E</td><td>U</td><td>U</td><td>S</td><td>U</td></tr>
+ <tr><td>19</td><td>JUSTIN KIRAN K J</td><td>U</td><td>E</td><td>S</td><td>C</td><td>E</td><td>U</td><td>U</td><td>A</td><td>U</td></tr>
+ <tr><td>20</td><td>KANDASAMY N</td><td>U</td><td>E</td><td>B</td><td>D</td><td>E</td><td>U</td><td>U</td><td>U</td><td>D</td></tr>
+ <tr><td>21</td><td>KAPLESHWAR U</td><td>U</td><td>U</td><td>A</td><td>A</td><td>D</td><td>U</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>22</td><td>KARTHICK RAJA R</td><td>U</td><td>U</td><td>B</td><td>E</td><td>U</td><td>U</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>23</td><td>KAVIARASAN C</td><td>E</td><td>U</td><td>B</td><td>B</td><td>D</td><td>E</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>24</td><td>KISHORE R</td><td>U</td><td>U</td><td>C</td><td>B</td><td>C</td><td>E</td><td>U</td><td>B</td><td>E</td></tr>
+ <tr><td>25</td><td>LAKSHMI S</td><td>U</td><td>U</td><td>B</td><td>C</td><td>U</td><td>U</td><td>U</td><td>U</td><td>C</td></tr>
+ <tr><td>26</td><td>MONISHA K</td><td>E</td><td>B</td><td>S</td><td>S</td><td>C</td><td>D</td><td>E</td><td>S</td><td>S</td></tr>
+ <tr><td>27</td><td>NANDAGOPAL E</td><td>U</td><td>U</td><td>A</td><td>B</td><td>U</td><td>U</td><td>U</td><td>A</td><td>C</td></tr>
+ <tr><td>28</td><td>NARENDHIRAN S</td><td>U</td><td>U</td><td>D</td><td>U</td><td>U</td><td>U</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>29</td><td>PAVITHRA A</td><td>E</td><td>D</td><td>A</td><td>S</td><td>D</td><td>U</td><td>U</td><td>S</td><td>S</td></tr>
+ <tr><td>30</td><td>POOJA V</td><td>E</td><td>C</td><td>A</td><td>A</td><td>E</td><td>D</td><td>E</td><td>B</td><td>B</td></tr>
+ <tr><td>31</td><td>PRASANTH A</td><td>E</td><td>U</td><td>D</td><td>C</td><td>U</td><td>E</td><td>U</td><td>C</td><td>U</td></tr>
+ <tr><td>32</td><td>PREETHI B</td><td>C</td><td>E</td><td>A</td><td>B</td><td>D</td><td>E</td><td>E</td><td>A</td><td>B</td></tr>
+ <tr><td>33</td><td>PRINCY RAJAM R</td><td>E</td><td>C</td><td>C</td><td>A</td><td>D</td><td>D</td><td>E</td><td>B</td><td>B</td></tr>
+ <tr><td>34</td><td>PRIYA S</td><td>E</td><td>E</td><td>C</td><td>S</td><td>E</td><td>C</td><td>E</td><td>A</td><td>A</td></tr>
+ <tr><td>35</td><td>PRIYA T</td><td>U</td><td>D</td><td>C</td><td>B</td><td>E</td><td>D</td><td>U</td><td>C</td><td>B</td></tr>
+ <tr><td>36</td><td>PRIYADHARSHINI M</td><td>E</td><td>C</td><td>D</td><td>A</td><td>E</td><td>U</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>37</td><td>PRIYANKA G</td><td>U</td><td>E</td><td>S</td><td>A</td><td>E</td><td>D</td><td>U</td><td>S</td><td>A</td></tr>
+ <tr><td>38</td><td>PRIYANKA M</td><td>U</td><td>E</td><td>B</td><td>B</td><td>U</td><td>U</td><td>U</td><td>B</td><td>E</td></tr>
+ <tr><td>39</td><td>REKHA P</td><td>E</td><td>C</td><td>D</td><td>A</td><td>U</td><td>U</td><td>U</td><td>C</td><td>S</td></tr>
+ <tr><td>40</td><td>SANGEETHA B</td><td>U</td><td>C</td><td>C</td><td>A</td><td>U</td><td>C</td><td>U</td><td>A</td><td>S</td></tr>
+ <tr><td>41</td><td>SANJAY SEKAR K C</td><td>U</td><td>U</td><td>D</td><td>U</td><td>U</td><td>U</td><td>U</td><td>C</td><td>U</td></tr>
+ <tr><td>42</td><td>SATHISH KUMAR M</td><td>U</td><td>U</td><td>D</td><td>E</td><td>U</td><td>E</td><td>U</td><td>C</td><td>E</td></tr>
+ <tr><td>43</td><td>SESHACHALLAM Y V</td><td>E</td><td>C</td><td>A</td><td>S</td><td>U</td><td>D</td><td>U</td><td>S</td><td>S</td></tr>
+ <tr><td>44</td><td>SHARUMATHI K</td><td>E</td><td>C</td><td>B</td><td>B</td><td>U</td><td>E</td><td>E</td><td>B</td><td>S</td></tr>
+ <tr><td>46</td><td>SINDHUJA S</td><td>U</td><td>U</td><td>B</td><td>C</td><td>U</td><td>E</td><td>U</td><td>A</td><td>U</td></tr>
+ <tr><td>47</td><td>SRINIVASAN U</td><td>E</td><td>E</td><td>C</td><td>B</td><td>E</td><td>E</td><td>U</td><td>A</td><td>B</td></tr>
+ <tr><td>48</td><td>SURIYA BALAJI N</td><td>U</td><td>U</td><td>C</td><td>U</td><td>E</td><td>D</td><td>U</td><td>C</td><td>U</td></tr>
+ <tr><td>49</td><td>SWETHA S</td><td>D</td><td>C</td><td>S</td><td>S</td><td>B</td><td>C</td><td>D</td><td>A</td><td>A</td></tr>
+ <tr><td>50</td><td>SWETHA S</td><td>U</td><td>E</td><td>C</td><td>B</td><td>E</td><td>E</td><td>U</td><td>B</td><td>A</td></tr>
+ <tr><td>51</td><td>THILAGAMANI S</td><td>U</td><td>E</td><td>C</td><td>C</td><td>E</td><td>E</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>52</td><td>UTHRA K</td><td>U</td><td>U</td><td>C</td><td>D</td><td>E</td><td>U</td><td>E</td><td>D</td><td>E</td></tr>
+ <tr><td>53</td><td>VENKATESH V</td><td>E</td><td>C</td><td>A</td><td>S</td><td>C</td><td>D</td><td>E</td><td>S</td><td>B</td></tr>
+ <tr><td>54</td><td>VIGNESH B</td><td>U</td><td>C</td><td>C</td><td>S</td><td>D</td><td>C</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>55</td><td>VIJAYALAKSHMI R</td><td>E</td><td>U</td><td>B</td><td>B</td><td>U</td><td>U</td><td>E</td><td>B</td><td>S</td></tr>
+ <tr><td>301</td><td>SOUNDHAR R</td><td>U</td><td>U</td><td>C</td><td>U</td><td>U</td><td>U</td><td>U</td><td>U</td><td>UA</td></tr>
+</tbody></table>
+					</div><!--end .table-responsive -->
+				</div>
+
+
+			</div>
+			
+			
+		</div>
+		
+		
+			<div class="section-body contain-lg">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="text-primary">Semester Results</h1>
+				</div>
+				<div class="col-lg-8">
+					<article class="margin-bottom-xxl">
+						<p class="lead">
+						</p>
+					</article>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-md-12">
+					<div class="card">
+						<div class="card-body">
+							<form class="form" role="form">
+								<div class="form-group floating-label">
+									<select id="select2" name="select2" class="form-control">
+										<option value="">&nbsp;</option>
+										<option value="1">Semester 1</option>
+          <option value="2">Semester 2</option>
+          <option value="3">Semester 3</option>
+          <option value="4">Semester 4</option>
+          <option value="5">Semester 5</option>
+          <option value="6">Semester 6</option>
+          <option value="7">Semester 7</option>
+          <option value="8">Semester 8</option>
+									</select>
+									<label for="select2">Select Semester</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+<div class="col-lg-12">
+					<div class="table-responsive">
+						<table id="datatable2" class="table table-striped table-hover">
+
+<thead><tr><th>S.No</th><th>Name</th><th>DPSD</th><th>OOPS</th><th>DIGITAL LAB</th><th>OOPS LAB</th><th>EVS</th><th>DSA</th><th>POC</th><th>DSA LAB</th><th>TPDE</th></tr></thead><tbody>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>CS2202</td><td>CS2203</td><td>CS2207</td><td>CS2209</td><td>GE2021</td><td>IT2201</td><td>IT2202</td><td>IT2205</td><td>MA2211</td></tr>
+ <tr><td>1</td><td>ABINAYA V</td><td>U</td><td>D</td><td>C</td><td>C</td><td>U</td><td>U</td><td>U</td><td>U</td><td>D</td></tr>
+ <tr><td>2</td><td>AJAY KUMAR R</td><td>U</td><td>E</td><td>A</td><td>A</td><td>U</td><td>U</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>3</td><td>AKASH B</td><td>U</td><td>E</td><td>B</td><td>B</td><td>U</td><td>U</td><td>U</td><td>B</td><td>A</td></tr>
+ <tr><td>4</td><td>AMALA JINU R</td><td>E</td><td>D</td><td>S</td><td>B</td><td>D</td><td>D</td><td>U</td><td>B</td><td>S</td></tr>
+ <tr><td>5</td><td>ARUN KUMAR S</td><td>E</td><td>U</td><td>C</td><td>C</td><td>U</td><td>E</td><td>U</td><td>B</td><td>C</td></tr>
+ <tr><td>6</td><td>ASHWATH D</td><td>U</td><td>U</td><td>C</td><td>C</td><td>U</td><td>U</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>7</td><td>ASHWINI S</td><td>E</td><td>B</td><td>S</td><td>B</td><td>U</td><td>D</td><td>U</td><td>A</td><td>S</td></tr>
+ <tr><td>8</td><td>CHRISTAL RANI P P</td><td>U</td><td>A</td><td>A</td><td>C</td><td>U</td><td>E</td><td>U</td><td>A</td><td>S</td></tr>
+ <tr><td>9</td><td>DEEPIKA G N</td><td>D</td><td>A</td><td>B</td><td>S</td><td>U</td><td>D</td><td>E</td><td>S</td><td>S</td></tr>
+ <tr><td>10</td><td>DEVA PRIYA M</td><td>U</td><td>C</td><td>C</td><td>C</td><td>U</td><td>C</td><td>E</td><td>B</td><td>B</td></tr>
+ <tr><td>12</td><td>DINESH R</td><td>U</td><td>U</td><td>B</td><td>E</td><td>E</td><td>E</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>13</td><td>DIVYA R</td><td>U</td><td>D</td><td>B</td><td>S</td><td>D</td><td>E</td><td>U</td><td>S</td><td>S</td></tr>
+ <tr><td>14</td><td>ESWARI S</td><td>U</td><td>E</td><td>C</td><td>B</td><td>E</td><td>E</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>15</td><td>GIRIDHARAN C</td><td>U</td><td>E</td><td>B</td><td>A</td><td>E</td><td>D</td><td>E</td><td>S</td><td>C</td></tr>
+ <tr><td>16</td><td>GOMATHI S</td><td>U</td><td>E</td><td>S</td><td>S</td><td>C</td><td>C</td><td>U</td><td>S</td><td>A</td></tr>
+ <tr><td>17</td><td>HIMALAYAN RAM P</td><td>U</td><td>U</td><td>D</td><td>E</td><td>E</td><td>E</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>18</td><td>JUGE PRAVEEN R</td><td>U</td><td>B</td><td>S</td><td>S</td><td>E</td><td>U</td><td>U</td><td>S</td><td>U</td></tr>
+ <tr><td>19</td><td>JUSTIN KIRAN K J</td><td>U</td><td>E</td><td>S</td><td>C</td><td>E</td><td>U</td><td>U</td><td>A</td><td>U</td></tr>
+ <tr><td>20</td><td>KANDASAMY N</td><td>U</td><td>E</td><td>B</td><td>D</td><td>E</td><td>U</td><td>U</td><td>U</td><td>D</td></tr>
+ <tr><td>21</td><td>KAPLESHWAR U</td><td>U</td><td>U</td><td>A</td><td>A</td><td>D</td><td>U</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>22</td><td>KARTHICK RAJA R</td><td>U</td><td>U</td><td>B</td><td>E</td><td>U</td><td>U</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>23</td><td>KAVIARASAN C</td><td>E</td><td>U</td><td>B</td><td>B</td><td>D</td><td>E</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>24</td><td>KISHORE R</td><td>U</td><td>U</td><td>C</td><td>B</td><td>C</td><td>E</td><td>U</td><td>B</td><td>E</td></tr>
+ <tr><td>25</td><td>LAKSHMI S</td><td>U</td><td>U</td><td>B</td><td>C</td><td>U</td><td>U</td><td>U</td><td>U</td><td>C</td></tr>
+ <tr><td>26</td><td>MONISHA K</td><td>E</td><td>B</td><td>S</td><td>S</td><td>C</td><td>D</td><td>E</td><td>S</td><td>S</td></tr>
+ <tr><td>27</td><td>NANDAGOPAL E</td><td>U</td><td>U</td><td>A</td><td>B</td><td>U</td><td>U</td><td>U</td><td>A</td><td>C</td></tr>
+ <tr><td>28</td><td>NARENDHIRAN S</td><td>U</td><td>U</td><td>D</td><td>U</td><td>U</td><td>U</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>29</td><td>PAVITHRA A</td><td>E</td><td>D</td><td>A</td><td>S</td><td>D</td><td>U</td><td>U</td><td>S</td><td>S</td></tr>
+ <tr><td>30</td><td>POOJA V</td><td>E</td><td>C</td><td>A</td><td>A</td><td>E</td><td>D</td><td>E</td><td>B</td><td>B</td></tr>
+ <tr><td>31</td><td>PRASANTH A</td><td>E</td><td>U</td><td>D</td><td>C</td><td>U</td><td>E</td><td>U</td><td>C</td><td>U</td></tr>
+ <tr><td>32</td><td>PREETHI B</td><td>C</td><td>E</td><td>A</td><td>B</td><td>D</td><td>E</td><td>E</td><td>A</td><td>B</td></tr>
+ <tr><td>33</td><td>PRINCY RAJAM R</td><td>E</td><td>C</td><td>C</td><td>A</td><td>D</td><td>D</td><td>E</td><td>B</td><td>B</td></tr>
+ <tr><td>34</td><td>PRIYA S</td><td>E</td><td>E</td><td>C</td><td>S</td><td>E</td><td>C</td><td>E</td><td>A</td><td>A</td></tr>
+ <tr><td>35</td><td>PRIYA T</td><td>U</td><td>D</td><td>C</td><td>B</td><td>E</td><td>D</td><td>U</td><td>C</td><td>B</td></tr>
+ <tr><td>36</td><td>PRIYADHARSHINI M</td><td>E</td><td>C</td><td>D</td><td>A</td><td>E</td><td>U</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>37</td><td>PRIYANKA G</td><td>U</td><td>E</td><td>S</td><td>A</td><td>E</td><td>D</td><td>U</td><td>S</td><td>A</td></tr>
+ <tr><td>38</td><td>PRIYANKA M</td><td>U</td><td>E</td><td>B</td><td>B</td><td>U</td><td>U</td><td>U</td><td>B</td><td>E</td></tr>
+ <tr><td>39</td><td>REKHA P</td><td>E</td><td>C</td><td>D</td><td>A</td><td>U</td><td>U</td><td>U</td><td>C</td><td>S</td></tr>
+ <tr><td>40</td><td>SANGEETHA B</td><td>U</td><td>C</td><td>C</td><td>A</td><td>U</td><td>C</td><td>U</td><td>A</td><td>S</td></tr>
+ <tr><td>41</td><td>SANJAY SEKAR K C</td><td>U</td><td>U</td><td>D</td><td>U</td><td>U</td><td>U</td><td>U</td><td>C</td><td>U</td></tr>
+ <tr><td>42</td><td>SATHISH KUMAR M</td><td>U</td><td>U</td><td>D</td><td>E</td><td>U</td><td>E</td><td>U</td><td>C</td><td>E</td></tr>
+ <tr><td>43</td><td>SESHACHALLAM Y V</td><td>E</td><td>C</td><td>A</td><td>S</td><td>U</td><td>D</td><td>U</td><td>S</td><td>S</td></tr>
+ <tr><td>44</td><td>SHARUMATHI K</td><td>E</td><td>C</td><td>B</td><td>B</td><td>U</td><td>E</td><td>E</td><td>B</td><td>S</td></tr>
+ <tr><td>46</td><td>SINDHUJA S</td><td>U</td><td>U</td><td>B</td><td>C</td><td>U</td><td>E</td><td>U</td><td>A</td><td>U</td></tr>
+ <tr><td>47</td><td>SRINIVASAN U</td><td>E</td><td>E</td><td>C</td><td>B</td><td>E</td><td>E</td><td>U</td><td>A</td><td>B</td></tr>
+ <tr><td>48</td><td>SURIYA BALAJI N</td><td>U</td><td>U</td><td>C</td><td>U</td><td>E</td><td>D</td><td>U</td><td>C</td><td>U</td></tr>
+ <tr><td>49</td><td>SWETHA S</td><td>D</td><td>C</td><td>S</td><td>S</td><td>B</td><td>C</td><td>D</td><td>A</td><td>A</td></tr>
+ <tr><td>50</td><td>SWETHA S</td><td>U</td><td>E</td><td>C</td><td>B</td><td>E</td><td>E</td><td>U</td><td>B</td><td>A</td></tr>
+ <tr><td>51</td><td>THILAGAMANI S</td><td>U</td><td>E</td><td>C</td><td>C</td><td>E</td><td>E</td><td>U</td><td>B</td><td>U</td></tr>
+ <tr><td>52</td><td>UTHRA K</td><td>U</td><td>U</td><td>C</td><td>D</td><td>E</td><td>U</td><td>E</td><td>D</td><td>E</td></tr>
+ <tr><td>53</td><td>VENKATESH V</td><td>E</td><td>C</td><td>A</td><td>S</td><td>C</td><td>D</td><td>E</td><td>S</td><td>B</td></tr>
+ <tr><td>54</td><td>VIGNESH B</td><td>U</td><td>C</td><td>C</td><td>S</td><td>D</td><td>C</td><td>U</td><td>A</td><td>A</td></tr>
+ <tr><td>55</td><td>VIJAYALAKSHMI R</td><td>E</td><td>U</td><td>B</td><td>B</td><td>U</td><td>U</td><td>E</td><td>B</td><td>S</td></tr>
+ <tr><td>301</td><td>SOUNDHAR R</td><td>U</td><td>U</td><td>C</td><td>U</td><td>U</td><td>U</td><td>U</td><td>U</td><td>UA</td></tr>
+</tbody></table>
+					</div><!--end .table-responsive -->
+				</div>
+			
+			</div>
+		</div>
+	
+		
+		
+	</section>
+		</div>
+</div>
+
+		
+<script src="../../js/libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="../../js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script src="../../js/libs/bootstrap/bootstrap.min.js"></script>
+<script src="../../js/libs/spin.js/spin.min.js"></script>
+<script src="../../js/libs/autosize/jquery.autosize.min.js"></script>
+<script src="../../js/libs/moment/moment.min.js"></script>
+<script src="../../js/1.js"></script>
+<script src="../../js/2.js"></script>
+<script src="../../js/3.js"></script>
+<script src="../../js/libs/jquery-knob/jquery.knob.min.js"></script>
+<script src="../../js/libs/sparkline/jquery.sparkline.min.js"></script>
+<script src="../../js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+<script src="../../js/libs/fullcalendar/fullcalendar.min.js"></script>
+<script src="../../js/libs/rickshaw/rickshaw.min.js"></script>
+<script src="../../js/libs/datatables.js"></script>
+
+
+<script src="../../js/d/d.js"></script>
+<script src="../../js/d/dCalendar.js"></script>
+<script src="../../js/d/DemoTableDynamic.js"></script>
+<!--<script src="../assets/js/modules/materialadmin/core/demo/DemoDashboard.js"></script>-->
+
+
+</body></html>
