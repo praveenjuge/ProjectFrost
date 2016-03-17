@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>News and Events | Compass</title>
+<head>
+<title>Create New Staff | Compass</title>
 		
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,7 @@
 <link type="text/css" rel="stylesheet" href="../../css/library/rickshaw/rickshaw.css" />
 <link type="text/css" rel="stylesheet" href="../../css/library/morris/morris.core.css" />
 <link type="text/css" rel="stylesheet" href="../../css/library/fullcalendar/fullcalendar.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/wizard/wizard.css" />
 
 <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
 
@@ -134,7 +135,7 @@
 		</a>
 	</li>  
 	<li>
-		<a href="../news-events/"  class="active">
+		<a href="../news-events/">
 			<div class="gui-icon"><i class="md md-event"></i></div>
 			<span class="title">News &amp; Events</span>
 		</a>
@@ -145,19 +146,19 @@
 			<span class="title">Results</span>
 		</a>
 	</li>    
-	<li class="gui-folder">
-        <a href="javascript:void(0);">
+	<li class="gui-folder" >
+        <a href="javascript:void(0);" class="active">
             <div class="gui-icon"><i class="md md-add"></i></div>
 			<span class="title">Create New</span>
         </a>
         <ul>
 <li><a href="../createstudent/" ><span class="title">Students</span></a></li>
-<li><a href="../createstaff/" ><span class="title">Staff</span></a></li>
+<li><a class="active" href="../createstaff/" ><span class="title">Staff</span></a></li>
 <li><a href="../createhod/" ><span class="title">HOD</span></a></li>
 <li><a href="../createdept/" ><span class="title">Department</span></a></li>
 <li><a href="../createclass/" ><span class="title">Class</span></a></li>
        </ul>
-    </li> 
+    </li>    
 	<li>
 		<a href="../placement/" >
 			<div class="gui-icon"><i class="md md-layers"></i></div>
@@ -175,177 +176,35 @@
 
 <div id="content">
 			
-<section>
-
 		<div class="section-body">
-			<div class="container">
-			<div class="row">
-			
-                <div class="col-md-12">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
 					<div class="card">
-					<div class="card-head style-primary">
-							<header>Add New News or Event</header>
-						</div>
 						<div class="card-body">
-							<form class="form" action="">
-							<div class="form-group floating-label">
-<input type="text" class="form-control" id="regular2">
-<label for="regular2">Name of the News</label>
-</div>
-	    
-                <div class="form-group control-width-normal">
-                        <div class="input-group date" id="datetimepicker1">
-                        <div class="input-group-content">
-                        <input value="" type="text" class="form-control">
-                        <label>Datepicker</label>
-                        <p class="help-block">yyyy/mm/dd</p>
-                        </div>
-                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        </div>
-                </div>
+							<form class="form" role="form">
+								<div class="form-group floating-label">
+									<input type="text" class="form-control" id="staffname">
+									<label for="staffname">Staff Name</label>
+								</div>
+
+								<div class="form-group floating-label">
+									<select id="select2" name="select2" class="form-control">
+										<option value="">&nbsp;</option>
+										<option value="30">IT</option>
+										<option value="40">MECH</option>
+										<option value="50">CSE</option>
+										<option value="60">ECE</option>
+										<option value="70">EEE</option>
+									</select>
+									<label for="select2">Select Department</label>
+								</div>
+<button type="button" class="btn btn-block ink-reaction btn-raised btn-primary">Add Staff</button>
 							</form>
-
-					<button type="button" class="btn btn-block ink-reaction btn-raised btn-primary">Submit</button>
 						</div>
-					</div>
-				</div>
-				<h2 class="text-light text-center">Latest News and Events</h2>
-				<br/>
-				<ul class="timeline collapse-lg timeline-hairline">
-				
-					<li class="timeline-inverted">
-						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
-						<div class="timeline-entry">
-							<div class="card style-default-bright">
-								<div class="card-body padding">
-
-									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
-									<span class="opacity-50">
-										Friday, March 23, 2016
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="timeline-inverted">
-						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
-						<div class="timeline-entry">
-							<div class="card style-default-bright">
-								<div class="card-body padding">
-
-									<span class="text-medium">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</span></span><br/>
-									<span class="opacity-50">
-										Monday, March 3, 2016
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="timeline-inverted">
-						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
-						<div class="timeline-entry">
-							<div class="card style-default-bright">
-								<div class="card-body padding">
-
-									<span class="text-medium">National Conference on Application of Nanotechnology - B.E. Civil Dept.</span></span><br/>
-									<span class="opacity-50">
-										Saturday, March 23, 2016
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="timeline-inverted">
-						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
-						<div class="timeline-entry">
-							<div class="card style-default-bright">
-								<div class="card-body padding">
-
-									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
-									<span class="opacity-50">
-										Friday, March 23, 2016
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="timeline-inverted">
-						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
-						<div class="timeline-entry">
-							<div class="card style-default-bright">
-								<div class="card-body padding">
-
-									<span class="text-medium">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</span></span><br/>
-									<span class="opacity-50">
-										Friday, March 23, 2016
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="timeline-inverted">
-						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
-						<div class="timeline-entry">
-							<div class="card style-default-bright">
-								<div class="card-body padding">
-
-									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
-									<span class="opacity-50">
-										Friday, March 23, 2016
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="timeline-inverted">
-						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
-						<div class="timeline-entry">
-							<div class="card style-default-bright">
-								<div class="card-body padding">
-
-									<span class="text-medium">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</span></span><br/>
-									<span class="opacity-50">
-										Friday, March 23, 2016
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="timeline-inverted">
-						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
-						<div class="timeline-entry">
-							<div class="card style-default-bright">
-								<div class="card-body padding">
-
-									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
-									<span class="opacity-50">
-										Friday, March 23, 2016
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="timeline-inverted">
-						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-menu-right"></span></div>
-						<div class="timeline-entry">
-							<div class="card style-default-bright">
-								<div class="card-body padding">
-
-									<span class="text-medium">National Conference on Application of Nanotechnology - B.E. Civil Dept.</span></span><br/>
-									<span class="opacity-50">
-										Friday, March 23, 2016
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-
-				</ul>
-                <button type="button" class="btn btn-block ink-reaction btn-raised btn-primary">View More</button>
-			</div>
+					</div></div>
+            </div>
 		</div>
-	</section>
-
 		</div>
 		
 
@@ -366,11 +225,10 @@
 <script src="../../js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
 <script src="../../js/libs/fullcalendar/fullcalendar.min.js"></script>
 <script src="../../js/libs/rickshaw/rickshaw.min.js"></script>
+<script src="../../js/libs/wizard/jquery.bootstrap.wizard.min.js"></script>
 
 
 <script src="../../js/d/d.js"></script>
-<script src="../../js/d/dCalendar.js"></script>
-<!--<script src="../assets/js/modules/materialadmin/core/demo/DemoDashboard.js"></script>-->
-
+<script src="../../js/d/dFormWizard.js"></script>
 
 </body></html>
