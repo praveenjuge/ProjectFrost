@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Attendence | Compass</title>
+		<title>Notification | Compass</title>
 		
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,7 @@
 <link type="text/css" rel="stylesheet" href="../../css/library/rickshaw/rickshaw.css" />
 <link type="text/css" rel="stylesheet" href="../../css/library/morris/morris.core.css" />
 <link type="text/css" rel="stylesheet" href="../../css/library/fullcalendar/fullcalendar.css" />
+<link type="text/css" rel="stylesheet" href="../../css/library/bootstrap-datepicker/datepicker3.css" />
 
 <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
 
@@ -92,7 +93,7 @@
 					<img src="../../images/avatar.jpg" alt="" />
 					<span class="profile-info">
 						Praveen Juge
-						<small>Student</small>
+						<small>Admin</small>
 					</span>
 				</a>
 				<ul class="dropdown-menu animation-dock">
@@ -128,14 +129,14 @@
 
 <ul id="main-menu" class="gui-controls">
 	<li>
-		<a href="../" >
+		<a href="../">
 			<div class="gui-icon"><i class="md md-home"></i></div>
 			<span class="title">Home</span>
 		</a>
 	</li>
     
 	<li>
-		<a href="#" class="active">
+		<a href="../attendence/">
 			<div class="gui-icon"><i class="md md-event"></i></div>
 			<span class="title">Attendence</span>
 		</a>
@@ -188,118 +189,151 @@
 <div id="content">
 			
 <section>
-	<div class="section-body">
-           
-<div class="row">
-    <div class="col-md-4">
-					<div class="card card-outlined style-primary">
-						<div class="card-head card-head-lg text-center">
-							<header>145 days Total</header>
-						</div>
-					</div>
-    </div>
-    <div class="col-md-4">
-					<div class="card card-outlined style-primary">
-						<div class="card-head card-head-lg text-center">
-							<header>45 days Attended</header>
-						</div>
-					</div>
-    </div>
-    <div class="col-md-4">
-					<div class="card card-outlined style-primary">
-						<div class="card-head card-head-lg text-center">
-							<header>15 days Missed</header>
-						</div>
-					</div>
-    </div>
-    
-</div>           
 
-            
-<div class="row">
-    <div class="col-md-2">
-					<div class="card">
-						<div class="card-body text-center">
-							<div class="knob knob-primary knob-default-dark-track size-2"><input type="text" class="dial" data-min="0" data-max="100" data-thickness=.1 value="40" data-readOnly=true></div>
-							<div>Subject 1</div>
-						</div>
-					</div>
-    </div>
-    <div class="col-md-2">
-					<div class="card">
-						<div class="card-body text-center">
-							<div class="knob knob-primary knob-default-dark-track size-2"><input type="text" class="dial" data-min="0" data-max="100" data-thickness=.1 value="70" data-readOnly=true></div>
-							<div>Subject 2</div>
-						</div>
-					</div>
-    </div>
-    <div class="col-md-2">
-					<div class="card">
-						<div class="card-body text-center">
-							<div class="knob knob-primary knob-default-dark-track size-2"><input type="text" class="dial" data-min="0" data-max="100" data-thickness=.1 value="30" data-readOnly=true></div>
-							<div>Subject 3</div>
-						</div>
-					</div>
-    </div>
-    <div class="col-md-2">
-					<div class="card">
-						<div class="card-body text-center">
-							<div class="knob knob-primary knob-default-dark-track size-2"><input type="text" class="dial" data-min="0" data-max="100" data-thickness=.1 value="90" data-readOnly=true></div>
-							<div>Subject 4</div>
-						</div>
-					</div>
-    </div>
-    <div class="col-md-2">
-					<div class="card">
-						<div class="card-body text-center">
-							<div class="knob knob-primary knob-default-dark-track size-2"><input type="text" class="dial" data-min="0" data-max="100" data-thickness=.1 value="45" data-readOnly=true></div>
-							<div>Subject 5</div>
-						</div>
-					</div>
-    </div>
-    <div class="col-md-2">
-					<div class="card">
-						<div class="card-body text-center">
-							<div class="knob knob-primary knob-default-dark-track size-2"><input type="text" class="dial" data-min="0" data-max="100" data-thickness=.1 value="80" data-readOnly=true></div>
-							<div>Subject 6</div>
-						</div>
-					</div>
-    </div>
-</div>
-           
-                                 
-<div class="row">
-    <div class="col-sm-12">
-					<div class="card">
-				<div class="card-head style-primary">
-							<header>
-								<span class="selected-day">&nbsp;</span> &nbsp;	<small class="selected-date">&nbsp;</small>
-							</header>
-							<div class="tools">
-								<div class="btn-group">
-									<a id="calender-today" class="btn btn-flat ink-reaction">Today</a>
-									<a id="calender-prev" class="btn btn-icon-toggle ink-reaction"><i class="fa fa-angle-left"></i></a>
-									<a id="calender-next" class="btn btn-icon-toggle ink-reaction"><i class="fa fa-angle-right"></i></a>
+		<div class="section-body">
+			<div class="container">
+			
+
+			
+				<h2 class="text-light text-center">Notifications</h2>
+				<br/>
+				<ul class="timeline collapse-lg timeline-hairline">
+				
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-chevron-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
 								</div>
 							</div>
-							<ul class="nav nav-tabs tabs-text-contrast tabs-accent" data-toggle="tabs">
-								<li data-mode="month" class="active"><a href="index.htm#">Month</a></li>
-								<li data-mode="agendaWeek"><a href="index.htm#">Week</a></li>
-								<li data-mode="agendaDay"><a href="index.htm#">Day</a></li>
-							</ul>
 						</div>
-						<div class="card-body no-padding">
-							<div id="calendar"></div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-chevron-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</span></span><br/>
+									<span class="opacity-50">
+										Monday, March 3, 2016
+									</span>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-</div>
-            
-        </div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-chevron-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Application of Nanotechnology - B.E. Civil Dept.</span></span><br/>
+									<span class="opacity-50">
+										Saturday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-chevron-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-chevron-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-chevron-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-chevron-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">One Conference on Information and Day Hands-on Training on - Mechanical Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-chevron-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Information and Intelligent Technologies NCIIT'16 - IT Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-circ circ-xl style-primary"><span class="glyphicon glyphicon-chevron-right"></span></div>
+						<div class="timeline-entry">
+							<div class="card style-default-bright">
+								<div class="card-body padding">
+
+									<span class="text-medium">National Conference on Application of Nanotechnology - B.E. Civil Dept.</span></span><br/>
+									<span class="opacity-50">
+										Friday, March 23, 2016
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+<button type="button" class="btn btn-block ink-reaction btn-raised btn-primary">View More</button>
+			</div>
+		</div>
 	</section>
 
 		</div>
-		
+
 </div>
 
 		
@@ -315,25 +349,15 @@
 <script src="../../js/libs/jquery-knob/jquery.knob.min.js"></script>
 <script src="../../js/libs/sparkline/jquery.sparkline.min.js"></script>
 <script src="../../js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
-<script src="../../js/libs/raphael/raphael-min.js"></script>
-<script src="../../js/libs/morris.js/morris.min.js"></script>
 <script src="../../js/libs/fullcalendar/fullcalendar.min.js"></script>
-<!--<script src="../../js/libs/rickshaw/rickshaw.min.js"></script>-->
-
+<script src="../../js/libs/rickshaw/rickshaw.min.js"></script>
 
 <script src="../../js/d/d.js"></script>
-<script src="../../js/d/dCalendaratten.js"></script>
-<!--<script src="../../js/d/dCharts.js"></script>-->
+<script src="../../js/d/dCalendar.js"></script>
 
+<script src="../../js/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
 <script type="text/javascript">
-    $('.dial').each(function () {
-			var options = materialadmin.App.getKnobStyle($(this));
-			$(this).knob(options);
-		});
+$('#datetimepicker1').datepicker({autoclose: true, todayHighlight: true});
 </script>
-
-
-<!--<script src="../assets/js/modules/materialadmin/core/demo/DemoDashboard.js"></script>-->
-
 
 </body></html>

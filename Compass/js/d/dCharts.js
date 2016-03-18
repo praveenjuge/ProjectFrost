@@ -27,8 +27,8 @@
 
 	p.initialize = function () {
 		// Rickshaw
-		this._initRickshaw();
-		this._initRickshawDemo2();
+//		this._initRickshaw();
+//		this._initRickshawDemo2();
 		
 		// Sparkline
 		this._initResponsiveSparkline();
@@ -49,127 +49,124 @@
 	// Rickshaw
 	// =========================================================================
 
-	p._initRickshaw = function () {
-		// Don't init a rickshaw graph twice
-		if (this.rickshawGraph !== null) {
-			return;
-		}
-
-		var o = this;
-
-		// Create random data
-		this.rickshawRandomData = new Rickshaw.Fixtures.RandomData(50);
-		for (var i = 0; i < 75; i++) {
-			this.rickshawRandomData.addData(this.rickshawSeries);
-		}
-
-		// Init Richshaw graph
-		this.rickshawGraph = new Rickshaw.Graph({
-			element: $('#rickshawGraph').get(0),
-			width: $('#rickshawGraph').closest('.card-body').width(),
-			height: $('#rickshawGraph').height(),
-			interpolation: 'linear',
-			renderer: 'area',
-			series: [
-				{
-					data: this.rickshawSeries[0],
-					color: $('#rickshawGraph').data('color1'),
-					name: 'temperature'
-				}, {
-					data: this.rickshawSeries[1],
-					color: $('#rickshawGraph').data('color2'),
-					name: 'heat index'
-				}
-			]
-		});
-
-		// Add hover info
-		var hoverDetail = new Rickshaw.Graph.HoverDetail({
-			graph: this.rickshawGraph
-		});
-
-		// Render graph
-		this.rickshawGraph.render();
-
-		// Add animated data
-		clearInterval(this.rickshawTimer);
-		this.rickshawTimer = setInterval(function () {
-			o._refreshRickshaw();
-		}, 2000);
-
-		materialadmin.App.callOnResize(function () {
-			o.rickshawGraph.configure({
-				height: $('#rickshawGraph').height(),
-				width: $('#rickshawGraph').closest('.card-body').width()
-			});
-			o.rickshawGraph.render();
-		});
-	};
-
-	p._refreshRickshaw = function () {
-		this.rickshawRandomData.removeData(this.rickshawSeries);
-		this.rickshawRandomData.addData(this.rickshawSeries);
-		this.rickshawGraph.update();
-	};
-
-	// =========================================================================
-	// Rickshaw - demo 2
-	// =========================================================================
-
-	p._initRickshawDemo2 = function () {
-		var seriesData = [[], [], [], [], []];
-		var random = new Rickshaw.Fixtures.RandomData(50);
-		for (var i = 0; i < 75; i++) {
-			random.addData(seriesData);
-		}
-		var graph = new Rickshaw.Graph({
-			element: $('#rickshawDemo2').get(0),
-			renderer: 'multi',
-			width: $('#rickshawDemo2').width(),
-			height: 300,
-			dotSize: 5,
-			series: [
-				{
-					name: 'temperature',
-					data: seriesData.shift(),
-					color: 'rgba(255, 0, 0, 0.4)',
-					renderer: 'stack'
-				}, {
-					name: 'heat index',
-					data: seriesData.shift(),
-					color: 'rgba(255, 127, 0, 0.4)',
-					renderer: 'stack'
-				}, {
-					name: 'dewpoint',
-					data: seriesData.shift(),
-					color: 'rgba(127, 0, 0, 0.3)',
-					renderer: 'scatterplot'
-				}, {
-					name: 'pop',
-					data: seriesData.shift().map(function (d) {
-						return {x: d.x, y: d.y / 4}
-					}),
-					color: 'rgba(0, 0, 127, 0.4)',
-					renderer: 'bar'
-				}, {
-					name: 'humidity',
-					data: seriesData.shift().map(function (d) {
-						return {x: d.x, y: d.y * 1.5}
-					}),
-					renderer: 'line',
-					color: 'rgba(0, 0, 127, 0.25)'
-				}
-			]
-		});
-		var slider = new Rickshaw.Graph.RangeSlider.Preview({
-			graph: graph,
-			element: document.querySelector('#slider')
-		});
-		graph.render();
-		var detail = new Rickshaw.Graph.HoverDetail({
-			graph: graph
-		});
-	};
+//	p._initRickshaw = function () {
+//		// Don't init a rickshaw graph twice
+//		if (this.rickshawGraph !== null) {
+//			return;
+//		}
+//
+//		var o = this;
+//
+//		// Create random data
+//		this.rickshawRandomData = new Rickshaw.Fixtures.RandomData(50);
+//		for (var i = 0; i < 75; i++) {
+//			this.rickshawRandomData.addData(this.rickshawSeries);
+//		}
+//
+//		// Init Richshaw graph
+//		this.rickshawGraph = new Rickshaw.Graph({
+//			element: $('#rickshawGraph').get(0),
+//			width: $('#rickshawGraph').closest('.card-body').width(),
+//			height: $('#rickshawGraph').height(),
+//			interpolation: 'linear',
+//			renderer: 'area',
+//			series: [
+//				{
+//					data: this.rickshawSeries[0],
+//					color: $('#rickshawGraph').data('color1'),
+//					name: 'temperature'
+//				}, {
+//					data: this.rickshawSeries[1],
+//					color: $('#rickshawGraph').data('color2'),
+//					name: 'heat index'
+//				}
+//			]
+//		});
+//
+//		// Add hover info
+//		var hoverDetail = new Rickshaw.Graph.HoverDetail({
+//			graph: this.rickshawGraph
+//		});
+//
+//		// Render graph
+//		this.rickshawGraph.render();
+//
+//		// Add animated data
+//		clearInterval(this.rickshawTimer);
+//		this.rickshawTimer = setInterval(function () {
+//			o._refreshRickshaw();
+//		}, 2000);
+//
+//		materialadmin.App.callOnResize(function () {
+//			o.rickshawGraph.configure({
+//				height: $('#rickshawGraph').height(),
+//				width: $('#rickshawGraph').closest('.card-body').width()
+//			});
+//			o.rickshawGraph.render();
+//		});
+//	};
+//
+//	p._refreshRickshaw = function () {
+//		this.rickshawRandomData.removeData(this.rickshawSeries);
+//		this.rickshawRandomData.addData(this.rickshawSeries);
+//		this.rickshawGraph.update();
+//	};
+//
+//
+//	p._initRickshawDemo2 = function () {
+//		var seriesData = [[], [], [], [], []];
+//		var random = new Rickshaw.Fixtures.RandomData(50);
+//		for (var i = 0; i < 75; i++) {
+//			random.addData(seriesData);
+//		}
+//		var graph = new Rickshaw.Graph({
+//			element: $('#rickshawDemo2').get(0),
+//			renderer: 'multi',
+//			width: $('#rickshawDemo2').width(),
+//			height: 300,
+//			dotSize: 5,
+//			series: [
+//				{
+//					name: 'temperature',
+//					data: seriesData.shift(),
+//					color: 'rgba(255, 0, 0, 0.4)',
+//					renderer: 'stack'
+//				}, {
+//					name: 'heat index',
+//					data: seriesData.shift(),
+//					color: 'rgba(255, 127, 0, 0.4)',
+//					renderer: 'stack'
+//				}, {
+//					name: 'dewpoint',
+//					data: seriesData.shift(),
+//					color: 'rgba(127, 0, 0, 0.3)',
+//					renderer: 'scatterplot'
+//				}, {
+//					name: 'pop',
+//					data: seriesData.shift().map(function (d) {
+//						return {x: d.x, y: d.y / 4}
+//					}),
+//					color: 'rgba(0, 0, 127, 0.4)',
+//					renderer: 'bar'
+//				}, {
+//					name: 'humidity',
+//					data: seriesData.shift().map(function (d) {
+//						return {x: d.x, y: d.y * 1.5}
+//					}),
+//					renderer: 'line',
+//					color: 'rgba(0, 0, 127, 0.25)'
+//				}
+//			]
+//		});
+//		var slider = new Rickshaw.Graph.RangeSlider.Preview({
+//			graph: graph,
+//			element: document.querySelector('#slider')
+//		});
+//		graph.render();
+//		var detail = new Rickshaw.Graph.HoverDetail({
+//			graph: graph
+//		});
+//	};
 
 	// =========================================================================
 	// SPARKLINE
